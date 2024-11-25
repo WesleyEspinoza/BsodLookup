@@ -29,379 +29,1851 @@
         "definition": "This indicates an invalid attempt to detach a process.",
         "solution": "Debug software applications for improper process handling and ensure all drivers are up-to-date."
     },
-    "INVALID_SOFTWARE_INTERRUPT": {},
-    "IRQL_NOT_DISPATCH_LEVEL": {},
-    "IRQL_NOT_GREATER_OR_EQUAL": {},
-    "IRQL_NOT_LESS_OR_EQUAL": {},
-    "NO_EXCEPTION_HANDLING_SUPPORT": {},
-    "MAXIMUM_WAIT_OBJECTS_EXCEEDED": {},
-    "MUTEX_LEVEL_NUMBER_VIOLATION": {},
-    "NO_USER_MODE_CONTEXT": {},
-    "SPIN_LOCK_ALREADY_OWNED": {},
-    "SPIN_LOCK_NOT_OWNED": {},
-    "THREAD_NOT_MUTEX_OWNER": {},
-    "TRAP_CAUSE_UNKNOWN": {},
-    "EMPTY_THREAD_REAPER_LIST": {},
-    "CREATE_DELETE_LOCK_NOT_LOCKED": {},
-    "LAST_CHANCE_CALLED_FROM_KMODE": {},
-    "CID_HANDLE_CREATION": {},
-    "CID_HANDLE_DELETION": {},
-    "REFERENCE_BY_POINTER": {},
-    "BAD_POOL_HEADER": {},
-    "MEMORY_MANAGEMENT": {},
-    "PFN_SHARE_COUNT": {},
-    "PFN_REFERENCE_COUNT": {},
-    "NO_SPIN_LOCK_AVAILABLE": {},
-    "KMODE_EXCEPTION_NOT_HANDLED": {},
-    "SHARED_RESOURCE_CONV_ERROR": {},
-    "KERNEL_APC_PENDING_DURING_EXIT": {},
-    "QUOTA_UNDERFLOW": {},
-    "FILE_SYSTEM": {},
-    "FAT_FILE_SYSTEM": {},
-    "NTFS_FILE_SYSTEM": {},
-    "NPFS_FILE_SYSTEM": {},
-    "CDFS_FILE_SYSTEM": {},
-    "RDR_FILE_SYSTEM": {},
-    "CORRUPT_ACCESS_TOKEN": {},
-    "SECURITY_SYSTEM": {},
-    "INCONSISTENT_IRP": {},
-    "PANIC_STACK_SWITCH": {},
-    "PORT_DRIVER_INTERNAL": {},
-    "SCSI_DISK_DRIVER_INTERNAL": {},
-    "DATA_BUS_ERROR": {},
-    "INSTRUCTION_BUS_ERROR": {},
-    "SET_OF_INVALID_CONTEXT": {},
-    "PHASE0_INITIALIZATION_FAILED": {},
-    "PHASE1_INITIALIZATION_FAILED": {},
-    "UNEXPECTED_INITIALIZATION_CALL": {},
-    "CACHE_MANAGER": {},
-    "NO_MORE_IRP_STACK_LOCATIONS": {},
-    "DEVICE_REFERENCE_COUNT_NOT_ZERO": {},
-    "FLOPPY_INTERNAL_ERROR": {},
-    "SERIAL_DRIVER_INTERNAL": {},
-    "SYSTEM_EXIT_OWNED_MUTEX": {},
-    "SYSTEM_UNWIND_PREVIOUS_USER": {},
-    "SYSTEM_SERVICE_EXCEPTION": {},
-    "INTERRUPT_UNWIND_ATTEMPTED": {},
-    "INTERRUPT_EXCEPTION_NOT_HANDLED": {},
-    "MULTIPROCESSOR_CONFIGURATION_NOT_SUPPORTED": {},
-    "NO_MORE_SYSTEM_PTES": {},
-    "TARGET_MDL_TOO_SMALL": {},
-    "MUST_SUCCEED_POOL_EMPTY": {},
-    "ATDISK_DRIVER_INTERNAL": {},
-    "NO_SUCH_PARTITION": {},
-    "MULTIPLE_IRP_COMPLETE_REQUESTS": {},
-    "INSUFFICIENT_SYSTEM_MAP_REGS": {},
-    "DEREF_UNKNOWN_LOGON_SESSION": {},
-    "REF_UNKNOWN_LOGON_SESSION": {},
-    "CANCEL_STATE_IN_COMPLETED_IRP": {},
-    "PAGE_FAULT_WITH_INTERRUPTS_OFF": {},
-    "IRQL_GT_ZERO_AT_SYSTEM_SERVICE": {},
-    "STREAMS_INTERNAL_ERROR": {},
-    "FATAL_UNHANDLED_HARD_ERROR": {},
-    "NO_PAGES_AVAILABLE": {},
-    "PFN_LIST_CORRUPT": {},
-    "NDIS_INTERNAL_ERROR": {},
-    "PAGE_FAULT_IN_NONPAGED_AREA": {},
-    "REGISTRY_ERROR": {},
-    "MAILSLOT_FILE_SYSTEM": {},
-    "NO_BOOT_DEVICE": {},
-    "LM_SERVER_INTERNAL_ERROR": {},
-    "DATA_COHERENCY_EXCEPTION": {},
-    "INSTRUCTION_COHERENCY_EXCEPTION": {},
-    "XNS_INTERNAL_ERROR": {},
-    "FTDISK_INTERNAL_ERROR": {},
-    "PINBALL_FILE_SYSTEM": {},
-    "CRITICAL_SERVICE_FAILED": {},
-    "SET_ENV_VAR_FAILED": {},
-    "HAL_INITIALIZATION_FAILED": {},
-    "UNSUPPORTED_PROCESSOR": {},
-    "OBJECT_INITIALIZATION_FAILED": {},
-    "SECURITY_INITIALIZATION_FAILED": {},
-    "PROCESS_INITIALIZATION_FAILED": {},
-    "HAL1_INITIALIZATION_FAILED": {},
-    "OBJECT1_INITIALIZATION_FAILED": {},
-    "SECURITY1_INITIALIZATION_FAILED": {},
-    "SYMBOLIC_INITIALIZATION_FAILED": {},
-    "MEMORY1_INITIALIZATION_FAILED": {},
-    "CACHE_INITIALIZATION_FAILED": {},
-    "CONFIG_INITIALIZATION_FAILED": {},
-    "FILE_INITIALIZATION_FAILED": {},
-    "IO1_INITIALIZATION_FAILED": {},
-    "LPC_INITIALIZATION_FAILED": {},
-    "PROCESS1_INITIALIZATION_FAILED": {},
-    "REFMON_INITIALIZATION_FAILED": {},
-    "SESSION1_INITIALIZATION_FAILED": {},
-    "SESSION2_INITIALIZATION_FAILED": {},
-    "SESSION3_INITIALIZATION_FAILED": {},
-    "SESSION4_INITIALIZATION_FAILED": {},
-    "SESSION5_INITIALIZATION_FAILED": {},
-    "ASSIGN_DRIVE_LETTERS_FAILED": {},
-    "CONFIG_LIST_FAILED": {},
-    "BAD_SYSTEM_CONFIG_INFO": {},
-    "CANNOT_WRITE_CONFIGURATION": {},
-    "PROCESS_HAS_LOCKED_PAGES": {},
-    "KERNEL_STACK_INPAGE_ERROR": {},
-    "PHASE0_EXCEPTION": {},
-    "MISMATCHED_HAL": {},
-    "KERNEL_DATA_INPAGE_ERROR": {},
-    "INACCESSIBLE_BOOT_DEVICE": {},
-    "BUGCODE_NDIS_DRIVER": {},
-    "INSTALL_MORE_MEMORY": {},
-    "SYSTEM_THREAD_EXCEPTION_NOT_HANDLED": {},
-    "UNEXPECTED_KERNEL_MODE_TRAP": {},
-    "NMI_HARDWARE_FAILURE": {},
-    "SPIN_LOCK_INIT_FAILURE": {},
-    "DFS_FILE_SYSTEM": {},
-    "SETUP_FAILURE": {},
-    "MBR_CHECKSUM_MISMATCH": {},
-    "KERNEL_MODE_EXCEPTION_NOT_HANDLED": {},
-    "PP0_INITIALIZATION_FAILED": {},
-    "PP1_INITIALIZATION_FAILED": {},
-    "UP_DRIVER_ON_MP_SYSTEM": {},
-    "INVALID_KERNEL_HANDLE": {},
-    "KERNEL_STACK_LOCKED_AT_EXIT": {},
-    "INVALID_WORK_QUEUE_ITEM": {},
-    "BOUND_IMAGE_UNSUPPORTED": {},
-    "END_OF_NT_EVALUATION_PERIOD": {},
-    "INVALID_REGION_OR_SEGMENT": {},
-    "SYSTEM_LICENSE_VIOLATION": {},
-    "UDFS_FILE_SYSTEM": {},
-    "MACHINE_CHECK_EXCEPTION": {},
-    "USER_MODE_HEALTH_MONITOR": {},
-    "DRIVER_POWER_STATE_FAILURE": {},
-    "INTERNAL_POWER_ERROR": {},
-    "PCI_BUS_DRIVER_INTERNAL": {},
-    "MEMORY_IMAGE_CORRUPT": {},
-    "ACPI_DRIVER_INTERNAL": {},
-    "CNSS_FILE_SYSTEM_FILTER": {},
-    "ACPI_BIOS_ERROR": {},
-    "BAD_EXHANDLE": {},
-    "HAL_MEMORY_ALLOCATION": {},
-    "VIDEO_DRIVER_DEBUG_REPORT_REQUEST": {},
-    "BGI_DETECTED_VIOLATION": {},
-    "VIDEO_DRIVER_INIT_FAILURE": {},
-    "ATTEMPTED_SWITCH_FROM_DPC": {},
-    "CHIPSET_DETECTED_ERROR": {},
-    "SESSION_HAS_VALID_VIEWS_ON_EXIT": {},
-    "NETWORK_BOOT_INITIALIZATION_FAILED": {},
-    "NETWORK_BOOT_DUPLICATE_ADDRESS": {},
-    "INVALID_HIBERNATED_STATE": {},
-    "ATTEMPTED_WRITE_TO_READONLY_MEMORY": {},
-    "MUTEX_ALREADY_OWNED": {},
-    "SPECIAL_POOL_DETECTED_MEMORY_CORRUPTION": {},
-    "BAD_POOL_CALLER": {},
-    "DRIVER_VERIFIER_DETECTED_VIOLATION": {},
-    "DRIVER_CORRUPTED_EXPOOL": {},
-    "DRIVER_CAUGHT_MODIFYING_FREED_POOL": {},
-    "TIMER_OR_DPC_INVALID": {},
-    "IRQL_UNEXPECTED_VALUE": {},
-    "DRIVER_VERIFIER_IOMANAGER_VIOLATION": {},
-    "PNP_DETECTED_FATAL_ERROR": {},
-    "DRIVER_LEFT_LOCKED_PAGES_IN_PROCESS": {},
-    "PAGE_FAULT_IN_FREED_SPECIAL_POOL": {},
-    "PAGE_FAULT_BEYOND_END_OF_ALLOCATION": {},
-    "DRIVER_UNLOADED_WITHOUT_CANCELLING_PENDING_OPERATIONS": {},
-    "TERMINAL_SERVER_DRIVER_MADE_INCORRECT_MEMORY_REFERENCE": {},
-    "DRIVER_CORRUPTED_MMPOOL": {},
-    "DRIVER_IRQL_NOT_LESS_OR_EQUAL": {},
-    "BUGCODE_ID_DRIVER": {},
-    "DRIVER_PORTION_MUST_BE_NONPAGED": {},
-    "SYSTEM_SCAN_AT_RAISED_IRQL_CAUGHT_IMPROPER_DRIVER_UNLOAD": {},
-    "DRIVER_PAGE_FAULT_IN_FREED_SPECIAL_POOL": {},
-    "DRIVER_PAGE_FAULT_BEYOND_END_OF_ALLOCATION": {},
-    "DRIVER_UNMAPPING_INVALID_VIEW": {},
-    "DRIVER_USED_EXCESSIVE_PTES": {},
-    "LOCKED_PAGES_TRACKER_CORRUPTION": {},
-    "SYSTEM_PTE_MISUSE": {},
-    "DRIVER_CORRUPTED_SYSPTES": {},
-    "DRIVER_INVALID_STACK_ACCESS": {},
-    "POOL_CORRUPTION_IN_FILE_AREA": {},
-    "IMPERSONATING_WORKER_THREAD": {},
-    "ACPI_BIOS_FATAL_ERROR": {},
-    "WORKER_THREAD_RETURNED_AT_BAD_IRQL": {},
-    "MANUALLY_INITIATED_CRASH": {},
-    "RESOURCE_NOT_OWNED": {},
-    "WORKER_INVALID": {},
-    "DRIVER_VERIFIER_DMA_VIOLATION": {},
-    "INVALID_FLOATING_POINT_STATE": {},
-    "INVALID_CANCEL_OF_FILE_OPEN": {},
-    "ACTIVE_EX_WORKER_THREAD_TERMINATION": {},
-    "THREAD_STUCK_IN_DEVICE_DRIVER": {},
-    "DIRTY_MAPPED_PAGES_CONGESTION": {},
-    "SESSION_HAS_VALID_SPECIAL_POOL_ON_EXIT": {},
-    "UNMOUNTABLE_BOOT_VOLUME": {},
-    "CRITICAL_PROCESS_DIED": {},
-    "STORAGE_MINIPORT_ERROR": {},
-    "SCSI_VERIFIER_DETECTED_VIOLATION": {},
-    "HARDWARE_INTERRUPT_STORM": {},
-    "DISORDERLY_SHUTDOWN": {},
-    "CRITICAL_OBJECT_TERMINATION": {},
-    "FLTMGR_FILE_SYSTEM": {},
-    "PCI_VERIFIER_DETECTED_VIOLATION": {},
-    "DRIVER_OVERRAN_STACK_BUFFER": {},
-    "RAMDISK_BOOT_INITIALIZATION_FAILED": {},
-    "DRIVER_RETURNED_STATUS_REPARSE_FOR_VOLUME_OPEN": {},
-    "HTTP_DRIVER_CORRUPTED": {},
-    "ATTEMPTED_EXECUTE_OF_NOEXECUTE_MEMORY": {},
-    "DIRTY_NOWRITE_PAGES_CONGESTION": {},
-    "BUGCODE_USB_DRIVER": {},
-    "RESERVE_QUEUE_OVERFLOW": {},
-    "LOADER_BLOCK_MISMATCH": {},
-    "CLOCK_WATCHDOG_TIMEOUT": {},
-    "DPC_WATCHDOG_TIMEOUT": {},
-    "MUP_FILE_SYSTEM": {},
-    "AGP_INVALID_ACCESS": {},
-    "AGP_GART_CORRUPTION": {},
-    "AGP_ILLEGALLY_REPROGRAMMED": {},
-    "THIRD_PARTY_FILE_SYSTEM_FAILURE": {},
-    "CRITICAL_STRUCTURE_CORRUPTION": {},
-    "APP_TAGGING_INITIALIZATION_FAILED": {},
-    "FSRTL_EXTRA_CREATE_PARAMETER_VIOLATION": {},
-    "WDF_VIOLATION": {},
-    "VIDEO_MEMORY_MANAGEMENT_INTERNAL": {},
-    "RESOURCE_MANAGER_EXCEPTION_NOT_HANDLED": {},
-    "RECURSIVE_NMI": {},
-    "MSRPC_STATE_VIOLATION": {},
+    "INVALID_SOFTWARE_INTERRUPT": {
+        "hexcode": "0x00000007",
+        "definition": "This error occurs when a software interrupt is invalid or improperly triggered.",
+        "solution": "Ensure all software and drivers are up-to-date. Check for bugs in software that handles interrupts."
+    },
+    "IRQL_NOT_DISPATCH_LEVEL": {
+        "hexcode": "0x00000008",
+        "definition": "This error occurs when a thread attempts an operation at an invalid IRQL (Interrupt Request Level).",
+        "solution": "Analyze drivers for IRQL mismanagement and ensure proper synchronization in kernel-mode code."
+    },
+    "IRQL_NOT_GREATER_OR_EQUAL": {
+        "hexcode": "0x00000009",
+        "definition": "A higher IRQL was expected for the operation, but the current IRQL is too low.",
+        "solution": "Verify and update drivers. Use debugging tools to identify the source of the IRQL conflict."
+    },
+    "IRQL_NOT_LESS_OR_EQUAL": {
+        "hexcode": "0x0000000A",
+        "definition": "Occurs when a kernel-mode process attempts to access memory it shouldn't at an inappropriate IRQL.",
+        "solution": "Update drivers, test RAM for errors, and analyze crash dumps to locate the faulty component."
+    },
+    "NO_EXCEPTION_HANDLING_SUPPORT": {
+        "hexcode": "0x0000000B",
+        "definition": "Indicates that an operation required exception handling, but no handler was available.",
+        "solution": "Examine application code and ensure all required exception handling mechanisms are implemented correctly."
+    },
+    "MAXIMUM_WAIT_OBJECTS_EXCEEDED": {
+        "hexcode": "0x0000000C",
+        "definition": "The system exceeded the maximum limit of wait objects it can handle simultaneously.",
+        "solution": "Optimize multithreaded applications and reduce the number of active threads or handles."
+    },
+    "MUTEX_LEVEL_NUMBER_VIOLATION": {
+        "hexcode": "0x0000000D",
+        "definition": "Occurs when an invalid mutex level number is encountered in kernel mode.",
+        "solution": "Debug applications or drivers that involve mutex synchronization to identify issues."
+    },
+    "NO_USER_MODE_CONTEXT": {
+        "hexcode": "0x0000000E",
+        "definition": "The system tried to execute an operation requiring user-mode context, but no such context was available.",
+        "solution": "Check kernel-mode operations and ensure that user-mode context is properly set when required."
+    },
+    "SPIN_LOCK_ALREADY_OWNED": {
+        "hexcode": "0x0000000F",
+        "definition": "A kernel-mode thread attempted to acquire a spin lock that it already owns.",
+        "solution": "Analyze drivers or kernel code for improper spin lock usage and implement proper lock handling."
+    },
+    "SPIN_LOCK_NOT_OWNED": {
+        "hexcode": "0x00000010",
+        "definition": "A thread attempted to release a spin lock that it does not own.",
+        "solution": "Review driver or kernel code to ensure proper lock acquisition and release sequences."
+    },
+    "THREAD_NOT_MUTEX_OWNER": {
+        "hexcode": "0x00000011",
+        "definition": "A thread tried to release a mutex that it does not own.",
+        "solution": "Verify correct mutex usage in application or driver code to prevent ownership violations."
+    },
+    "TRAP_CAUSE_UNKNOWN": {
+        "hexcode": "0x00000012",
+        "definition": "An unknown trap exception occurred that the system could not identify.",
+        "solution": "Analyze crash dumps and run hardware diagnostics to identify the source of the trap exception."
+    },
+    "EMPTY_THREAD_REAPER_LIST": {
+        "hexcode": "0x00000013",
+        "definition": "A thread reaper list operation was attempted, but the list was unexpectedly empty.",
+        "solution": "Inspect thread reaper routines and ensure proper thread lifecycle management."
+    },
+    "CREATE_DELETE_LOCK_NOT_LOCKED": {
+        "hexcode": "0x00000014",
+        "definition": "The system attempted to create or delete a lock but found it was not properly locked.",
+        "solution": "Check the application or driver code for proper lock handling and synchronization mechanisms."
+    },
+    "LAST_CHANCE_CALLED_FROM_KMODE": {
+        "hexcode": "0x00000015",
+        "definition": "A kernel-mode routine called a 'last chance' routine unexpectedly.",
+        "solution": "Inspect kernel-mode code for improper handling of error routines and ensure they are invoked correctly."
+    },
+    "CID_HANDLE_CREATION": {
+        "hexcode": "0x00000016",
+        "definition": "A failure occurred while creating a handle for a Client ID (CID).",
+        "solution": "Review process and thread handle creation routines for potential resource or synchronization issues."
+    },
+    "CID_HANDLE_DELETION": {
+        "hexcode": "0x00000017",
+        "definition": "A failure occurred while deleting a handle for a Client ID (CID).",
+        "solution": "Ensure proper release of CID-related handles and debug any resource management issues in the code."
+    },
+    "REFERENCE_BY_POINTER": {
+        "hexcode": "0x00000018",
+        "definition": "An invalid reference count was detected for an object by its pointer.",
+        "solution": "Examine reference count management in drivers or kernel code to ensure proper object handling."
+    },
+    "BAD_POOL_HEADER": {
+        "hexcode": "0x00000019",
+        "definition": "A memory pool header corruption was detected in kernel memory.",
+        "solution": "Check drivers and memory-intensive programs for bugs, and test system RAM for errors."
+    },
+    "MEMORY_MANAGEMENT": {
+        "hexcode": "0x0000001A",
+        "definition": "This indicates a serious memory management issue, such as corruption or improper allocation.",
+        "solution": "Analyze crash dumps for memory-related errors and test physical memory for faults."
+    },
+    "PFN_SHARE_COUNT": {
+        "hexcode": "0x0000001B",
+        "definition": "The Page Frame Number (PFN) share count is inconsistent or corrupted.",
+        "solution": "Inspect memory management routines and hardware for errors, especially memory modules."
+    },
+    "PFN_REFERENCE_COUNT": {
+        "hexcode": "0x0000001C",
+        "definition": "The reference count for a Page Frame Number (PFN) is inconsistent or invalid.",
+        "solution": "Verify drivers and system memory. Debug memory management issues in kernel-mode code."
+    },
+    "NO_SPIN_LOCK_AVAILABLE": {
+        "hexcode": "0x0000001D",
+        "definition": "A thread attempted to acquire a spin lock, but none was available.",
+        "solution": "Ensure adequate spin lock availability and proper handling in drivers or kernel code."
+    },
+    "KMODE_EXCEPTION_NOT_HANDLED": {
+        "hexcode": "0x0000001E",
+        "definition": "A kernel-mode exception was not properly handled by the system.",
+        "solution": "Analyze the crash dump to identify the source of the exception and debug kernel code accordingly."
+    },
+    "SHARED_RESOURCE_CONV_ERROR": {
+        "hexcode": "0x0000001F",
+        "definition": "An error occurred while converting shared resources, leading to an inconsistency.",
+        "solution": "Review resource-sharing mechanisms and debug drivers managing shared resources."
+    },
+    "KERNEL_APC_PENDING_DURING_EXIT": {
+        "hexcode": "0x00000020",
+        "definition": "An Asynchronous Procedure Call (APC) was pending for a thread exiting kernel mode.",
+        "solution": "Ensure proper synchronization and thread lifecycle management in kernel-mode operations."
+    },
+    "QUOTA_UNDERFLOW": {
+        "hexcode": "0x00000021",
+        "definition": "The system detected a quota underflow, indicating improper resource allocation.",
+        "solution": "Debug resource quota management in applications or drivers and ensure correct usage."
+    },
+    "FILE_SYSTEM": {
+        "hexcode": "0x00000022",
+        "definition": "A critical error occurred in the file system, likely due to corruption or a failed operation.",
+        "solution": "Run a disk check utility (e.g., chkdsk), verify the integrity of file system drivers, and check for hardware issues with storage devices."
+    },
+    "FAT_FILE_SYSTEM": {
+        "hexcode": "0x00000023",
+        "definition": "A critical error occurred in the FAT file system, likely due to corruption or a driver issue.",
+        "solution": "Run chkdsk on the affected volume, update file system drivers, and check for hardware issues."
+    },
+    "NTFS_FILE_SYSTEM": {
+        "hexcode": "0x00000024",
+        "definition": "An error occurred in the NTFS file system, potentially due to corruption or improper operations.",
+        "solution": "Run chkdsk, ensure the integrity of the NTFS volume, and update storage-related drivers."
+    },
+    "NPFS_FILE_SYSTEM": {
+        "hexcode": "0x00000025",
+        "definition": "An error was detected in the Named Pipe File System driver.",
+        "solution": "Inspect the named pipe driver (NPFS.sys) for updates or corruption and verify related software."
+    },
+    "CDFS_FILE_SYSTEM": {
+        "hexcode": "0x00000026",
+        "definition": "A critical error occurred in the CD-ROM File System (CDFS) driver.",
+        "solution": "Check the CD/DVD media and update or repair the CDFS.sys driver."
+    },
+    "RDR_FILE_SYSTEM": {
+        "hexcode": "0x00000027",
+        "definition": "An error was detected in the network redirector file system driver.",
+        "solution": "Inspect network-related drivers for corruption or incompatibility and update them if necessary."
+    },
+    "CORRUPT_ACCESS_TOKEN": {
+        "hexcode": "0x00000028",
+        "definition": "The system detected a corruption in an access token.",
+        "solution": "Inspect user authentication processes and update or repair security-related system files."
+    },
+    "SECURITY_SYSTEM": {
+        "hexcode": "0x00000029",
+        "definition": "A failure occurred in the security subsystem of the operating system.",
+        "solution": "Ensure system integrity by checking security logs, running antivirus scans, and verifying system files."
+    },
+    "INCONSISTENT_IRP": {
+        "hexcode": "0x0000002A",
+        "definition": "An inconsistency was detected in an I/O Request Packet (IRP).",
+        "solution": "Debug I/O operations and inspect drivers handling IRPs for errors or corruption."
+    },
+    "PANIC_STACK_SWITCH": {
+        "hexcode": "0x0000002B",
+        "definition": "A kernel-mode thread performed an illegal stack switch.",
+        "solution": "Debug thread stack management and ensure proper context switching in kernel-mode operations."
+    },
+    "PORT_DRIVER_INTERNAL": {
+        "hexcode": "0x0000002C",
+        "definition": "An internal error occurred in a port driver.",
+        "solution": "Update or repair port drivers and check for conflicts or resource management issues."
+    },
+    "SCSI_DISK_DRIVER_INTERNAL": {
+        "hexcode": "0x0000002D",
+        "definition": "An internal error was detected in the SCSI disk driver.",
+        "solution": "Inspect and update SCSI-related drivers and verify the health of storage devices."
+    },
+    "DATA_BUS_ERROR": {
+        "hexcode": "0x0000002E",
+        "definition": "A data bus error occurred, potentially caused by faulty hardware or drivers.",
+        "solution": "Check system RAM, motherboard, and connected devices for hardware issues."
+    },
+    "INSTRUCTION_BUS_ERROR": {
+        "hexcode": "0x0000002F",
+        "definition": "An error occurred in the instruction bus, typically indicative of hardware failure.",
+        "solution": "Inspect and test the CPU, memory, and motherboard for faults."
+    },
+    "SET_OF_INVALID_CONTEXT": {
+        "hexcode": "0x00000030",
+        "definition": "An invalid processor context was detected.",
+        "solution": "Debug kernel operations and check for driver or hardware-related inconsistencies."
+    },
+    "PHASE0_INITIALIZATION_FAILED": {
+        "hexcode": "0x00000031",
+        "definition": "The system failed during phase 0 of initialization.",
+        "solution": "Check boot configuration and hardware initialization logs for errors."
+    },
+    "PHASE1_INITIALIZATION_FAILED": {
+        "hexcode": "0x00000032",
+        "definition": "The system failed during phase 1 of initialization.",
+        "solution": "Verify kernel and driver initialization processes and check for missing or corrupted files."
+    },
+    "UNEXPECTED_INITIALIZATION_CALL": {
+        "hexcode": "0x00000033",
+        "definition": "A driver made an unexpected call during initialization.",
+        "solution": "Inspect drivers for proper initialization routines and debug kernel logs."
+    },
+    "CACHE_MANAGER": {
+        "hexcode": "0x00000034",
+        "definition": "A critical error occurred in the cache manager subsystem.",
+        "solution": "Update system drivers and check for disk or memory corruption affecting the cache manager."
+    },
+    "NO_MORE_IRP_STACK_LOCATIONS": {
+        "hexcode": "0x00000035",
+        "definition": "An IRP had no remaining stack locations for a driver to process.",
+        "solution": "Verify driver configurations and debug improper IRP stack usage in kernel-mode code."
+    },
+    "DEVICE_REFERENCE_COUNT_NOT_ZERO": {
+        "hexcode": "0x00000036",
+        "definition": "A device object had a non-zero reference count when it was deleted.",
+        "solution": "Inspect driver code for proper reference count handling and resource cleanup."
+    },
+    "FLOPPY_INTERNAL_ERROR": {
+        "hexcode": "0x00000037",
+        "definition": "An internal error occurred in the floppy disk driver.",
+        "solution": "Update or repair floppy disk drivers, if applicable, or remove unsupported hardware."
+    },
+    "SERIAL_DRIVER_INTERNAL": {
+        "hexcode": "0x00000038",
+        "definition": "An internal error was detected in the serial driver.",
+        "solution": "Inspect and update serial port drivers, and check for hardware conflicts."
+    },
+    "SYSTEM_EXIT_OWNED_MUTEX": {
+        "hexcode": "0x00000039",
+        "definition": "A thread exited while still holding a mutex it owned.",
+        "solution": "Debug thread synchronization and ensure proper release of mutexes in code."
+    },
+    "SYSTEM_UNWIND_PREVIOUS_USER": {
+        "hexcode": "0x0000003A",
+        "definition": "An error occurred while unwinding a system call from a user thread.",
+        "solution": "Inspect thread stack operations and debug user-mode to kernel-mode transitions."
+    },
+    "SYSTEM_SERVICE_EXCEPTION": {
+        "hexcode": "0x0000003B",
+        "definition": "A system service executed an invalid operation, typically due to incorrect memory access.",
+        "solution": "Check recently installed drivers or software, update Windows, and inspect system logs for further clues."
+    },
+    "INTERRUPT_UNWIND_ATTEMPTED": {
+        "hexcode": "0x0000003C",
+        "definition": "An interrupt attempted to unwind improperly, likely due to faulty interrupt handling.",
+        "solution": "Verify and update interrupt-handling drivers or firmware."
+    },
+    "INTERRUPT_EXCEPTION_NOT_HANDLED": {
+        "hexcode": "0x0000003D",
+        "definition": "An unhandled exception occurred during an interrupt routine.",
+        "solution": "Debug kernel interrupt routines and ensure hardware compatibility with the system."
+    },
+    "MULTIPROCESSOR_CONFIGURATION_NOT_SUPPORTED": {
+        "hexcode": "0x0000003E",
+        "definition": "The system does not support the current multiprocessor configuration.",
+        "solution": "Check BIOS/UEFI settings, ensure all CPUs are compatible, and update the firmware."
+    },
+    "NO_MORE_SYSTEM_PTES": {
+        "hexcode": "0x0000003F",
+        "definition": "The system ran out of Page Table Entries (PTEs) for mapping kernel memory.",
+        "solution": "Increase the number of available PTEs by modifying the system registry or reducing memory-intensive operations."
+    },
+    "TARGET_MDL_TOO_SMALL": {
+        "hexcode": "0x00000040",
+        "definition": "A Memory Descriptor List (MDL) was too small for the I/O operation requested.",
+        "solution": "Update or debug drivers using MDLs for I/O operations and ensure they allocate sufficient memory."
+    },
+    "MUST_SUCCEED_POOL_EMPTY": {
+        "hexcode": "0x00000041",
+        "definition": "A critical pool allocation failed because the must-succeed memory pool was empty.",
+        "solution": "Investigate and resolve memory leaks, and increase system memory if necessary."
+    },
+    "ATDISK_DRIVER_INTERNAL": {
+        "hexcode": "0x00000042",
+        "definition": "An internal error occurred in the ATDISK driver.",
+        "solution": "Update the ATDISK.sys driver and inspect the associated hardware."
+    },
+    "NO_SUCH_PARTITION": {
+        "hexcode": "0x00000043",
+        "definition": "A requested partition could not be found during boot or access attempts.",
+        "solution": "Verify the partition table, check disk integrity, and ensure the correct boot device is selected."
+    },
+    "MULTIPLE_IRP_COMPLETE_REQUESTS": {
+        "hexcode": "0x00000044",
+        "definition": "A driver attempted to complete an IRP that had already been completed.",
+        "solution": "Debug driver behavior and ensure proper handling of IRPs without duplicate completions."
+    },
+    "INSUFFICIENT_SYSTEM_MAP_REGS": {
+        "hexcode": "0x00000045",
+        "definition": "The system ran out of map registers for DMA operations.",
+        "solution": "Optimize DMA usage or modify the system configuration to allocate more map registers."
+    },
+    "DEREF_UNKNOWN_LOGON_SESSION": {
+        "hexcode": "0x00000046",
+        "definition": "An attempt was made to dereference an unknown logon session.",
+        "solution": "Inspect authentication services and debug security-related modules."
+    },
+    "REF_UNKNOWN_LOGON_SESSION": {
+        "hexcode": "0x00000047",
+        "definition": "An attempt was made to reference an unknown logon session.",
+        "solution": "Check authentication and session management processes for errors."
+    },
+    "CANCEL_STATE_IN_COMPLETED_IRP": {
+        "hexcode": "0x00000048",
+        "definition": "A driver attempted to cancel an IRP that was already completed.",
+        "solution": "Debug driver handling of IRPs and ensure proper state tracking."
+    },
+    "PAGE_FAULT_WITH_INTERRUPTS_OFF": {
+        "hexcode": "0x00000049",
+        "definition": "A page fault occurred while interrupts were disabled.",
+        "solution": "Inspect kernel code for invalid memory access during critical sections."
+    },
+    "IRQL_GT_ZERO_AT_SYSTEM_SERVICE": {
+        "hexcode": "0x0000004A",
+        "definition": "A system service call was made at an IRQL higher than zero, which is invalid.",
+        "solution": "Debug driver IRQL levels and inspect kernel-mode operations for violations."
+    },
+    "STREAMS_INTERNAL_ERROR": {
+        "hexcode": "0x0000004B",
+        "definition": "An internal error occurred in the STREAMS subsystem.",
+        "solution": "Inspect STREAMS-based drivers and update or debug them as necessary."
+    },
+    "FATAL_UNHANDLED_HARD_ERROR": {
+        "hexcode": "0x0000004C",
+        "definition": "A fatal, unhandled error occurred during hardware interaction.",
+        "solution": "Check system logs for hardware failure details and update drivers or firmware."
+    },
+    "NO_PAGES_AVAILABLE": {
+        "hexcode": "0x0000004D",
+        "definition": "The system ran out of available pages in memory.",
+        "solution": "Increase system RAM or optimize memory usage."
+    },
+    "PFN_LIST_CORRUPT": {
+        "hexcode": "0x0000004E",
+        "definition": "The Page Frame Number (PFN) list was corrupted.",
+        "solution": "Run memory diagnostics and inspect drivers interacting with memory management."
+    },
+    "NDIS_INTERNAL_ERROR": {
+        "hexcode": "0x0000004F",
+        "definition": "An internal error occurred in the NDIS (Network Driver Interface Specification) driver.",
+        "solution": "Inspect and update network drivers for compatibility and stability."
+    },
+    "PAGE_FAULT_IN_NONPAGED_AREA": {
+        "hexcode": "0x00000050",
+        "definition": "An attempt was made to access memory in the non-paged area, causing a fault.",
+        "solution": "Run memory diagnostics, check recently installed drivers, and inspect hardware for faults."
+    },
+    "REGISTRY_ERROR": {
+        "hexcode": "0x00000051",
+        "definition": "A critical error occurred in the Windows Registry.",
+        "solution": "Restore the registry from a backup, repair the registry, or reinstall the operating system if necessary."
+    },
+    "MAILSLOT_FILE_SYSTEM": {
+        "hexcode": "0x00000052",
+        "definition": "An error was detected in the Mailslot File System.",
+        "solution": "Inspect and update related drivers or software interacting with the mailslot system."
+    },
+    "NO_BOOT_DEVICE": {
+        "hexcode": "0x00000053",
+        "definition": "The system could not locate a boot device during startup.",
+        "solution": "Verify boot configuration, check connections to boot devices, and repair boot sectors if needed."
+    },
+    "LM_SERVER_INTERNAL_ERROR": {
+        "hexcode": "0x00000054",
+        "definition": "An internal error occurred in the LAN Manager server.",
+        "solution": "Inspect LAN Manager configuration and update associated drivers or services."
+    },
+    "DATA_COHERENCY_EXCEPTION": {
+        "hexcode": "0x00000055",
+        "definition": "A data coherency exception was detected, often caused by faulty hardware or driver issues.",
+        "solution": "Test hardware components and ensure drivers maintain data integrity."
+    },
+    "INSTRUCTION_COHERENCY_EXCEPTION": {
+        "hexcode": "0x00000056",
+        "definition": "An instruction coherency exception occurred, potentially due to hardware failure.",
+        "solution": "Inspect CPU and memory components for faults and update firmware if necessary."
+    },
+    "XNS_INTERNAL_ERROR": {
+        "hexcode": "0x00000057",
+        "definition": "An internal error was detected in the Xerox Network Systems (XNS) protocol driver.",
+        "solution": "Update or debug XNS-related drivers or replace legacy protocols with modern alternatives."
+    },
+    "FTDISK_INTERNAL_ERROR": {
+        "hexcode": "0x00000058",
+        "definition": "An internal error occurred in the FTDISK driver, responsible for fault-tolerant disk operations.",
+        "solution": "Update or repair the FTDISK driver, and check the integrity of fault-tolerant disk configurations."
+    },
+    "PINBALL_FILE_SYSTEM": {
+        "hexcode": "0x00000059",
+        "definition": "An error was detected in the Pinball file system, typically used for removable media.",
+        "solution": "Check the health of removable storage devices and update related file system drivers."
+    },
+    "CRITICAL_SERVICE_FAILED": {
+        "hexcode": "0x0000005A",
+        "definition": "A critical system service failed to start during boot.",
+        "solution": "Identify the failing service in system logs and repair or reinstall the associated application or driver."
+    },
+    "SET_ENV_VAR_FAILED": {
+        "hexcode": "0x0000005B",
+        "definition": "The system encountered an error while setting an environment variable.",
+        "solution": "Verify the environment variables and check for corrupt system files using tools like SFC."
+    },
+    "HAL_INITIALIZATION_FAILED": {
+        "hexcode": "0x0000005C",
+        "definition": "The Hardware Abstraction Layer (HAL) failed to initialize during startup.",
+        "solution": "Ensure compatibility between the operating system and hardware. Update the BIOS/UEFI and HAL drivers."
+    },
+    "UNSUPPORTED_PROCESSOR": {
+        "hexcode": "0x0000005D",
+        "definition": "The processor is unsupported by the current version of Windows.",
+        "solution": "Verify the system requirements and ensure the processor is compatible with the installed operating system version."
+    },
+    "OBJECT_INITIALIZATION_FAILED": {
+        "hexcode": "0x0000005E",
+        "definition": "An object manager failed to initialize a system object.",
+        "solution": "Inspect system logs for detailed errors, repair system files, or reinstall the operating system if necessary."
+    },
+    "SECURITY_INITIALIZATION_FAILED": {
+        "hexcode": "0x0000005F",
+        "definition": "The security subsystem failed to initialize.",
+        "solution": "Check system logs for security-related errors and repair or update the operating system."
+    },
+    "PROCESS_INITIALIZATION_FAILED": {
+        "hexcode": "0x00000060",
+        "definition": "The system process manager failed to initialize a critical process.",
+        "solution": "Inspect system logs for process-specific errors and perform a system repair or restore."
+    },
+    "HAL1_INITIALIZATION_FAILED": {
+        "hexcode": "0x00000061",
+        "definition": "An alternative Hardware Abstraction Layer (HAL1) failed to initialize.",
+        "solution": "Verify the correct HAL version is installed and compatible with the hardware configuration."
+    },
+    "OBJECT1_INITIALIZATION_FAILED": {
+        "hexcode": "0x00000062",
+        "definition": "An object manager encountered a critical error during initialization.",
+        "solution": "Inspect system logs, repair system files, and ensure system integrity."
+    },
+    "SECURITY1_INITIALIZATION_FAILED": {
+        "hexcode": "0x00000063",
+        "definition": "An alternate security subsystem failed to initialize during boot.",
+        "solution": "Update or repair security drivers and subsystems. Check for incompatible third-party security software."
+    },
+    "SYMBOLIC_INITIALIZATION_FAILED": {
+        "hexcode": "0x00000064",
+        "definition": "A symbolic link-related initialization process failed.",
+        "solution": "Verify symbolic link configurations and inspect filesystem integrity."
+    },
+    "MEMORY1_INITIALIZATION_FAILED": {
+        "hexcode": "0x00000065",
+        "definition": "A failure occurred during the initialization of a memory management component.",
+        "solution": "Run memory diagnostics and repair system files as needed."
+    },
+    "CACHE_INITIALIZATION_FAILED": {
+        "hexcode": "0x00000066",
+        "definition": "The system cache manager failed to initialize during startup.",
+        "solution": "Inspect disk and memory subsystems, and repair or update associated drivers."
+    },
+    "CONFIG_INITIALIZATION_FAILED": {
+        "hexcode": "0x00000067",
+        "definition": "The configuration manager failed to initialize system settings.",
+        "solution": "Repair the system configuration using recovery tools or reinstall the operating system."
+    },
+    "FILE_INITIALIZATION_FAILED": {
+        "hexcode": "0x00000068",
+        "definition": "A critical error occurred during the initialization of file management components.",
+        "solution": "Check disk integrity, repair filesystem errors, and ensure system file integrity."
+    },
+    "IO1_INITIALIZATION_FAILED": {
+        "hexcode": "0x00000069",
+        "definition": "The I/O manager failed to initialize during boot.",
+        "solution": "Inspect system logs for I/O-related errors and update or repair drivers."
+    },
+    "LPC_INITIALIZATION_FAILED": {
+        "hexcode": "0x0000006A",
+        "definition": "The Local Procedure Call (LPC) subsystem failed to initialize.",
+        "solution": "Check system logs and ensure the LPC manager and related drivers are functioning correctly."
+    },
+    "PROCESS1_INITIALIZATION_FAILED": {
+        "hexcode": "0x0000006B",
+        "definition": "An alternate process manager failed to initialize during startup.",
+        "solution": "Inspect and repair process initialization components in the operating system."
+    },
+    "REFMON_INITIALIZATION_FAILED": {
+        "hexcode": "0x0000006C",
+        "definition": "The reference monitor failed to initialize, potentially causing security issues.",
+        "solution": "Update or repair security subsystems and inspect system integrity."
+    },
+    "SESSION1_INITIALIZATION_FAILED": {
+        "hexcode": "0x0000006D",
+        "definition": "An error occurred during the initialization of session management components.",
+        "solution": "Check session-related system logs and repair or update the operating system."
+    },
+    "SESSION2_INITIALIZATION_FAILED": {
+        "hexcode": "0x0000006E",
+        "definition": "An alternate session management process failed during startup.",
+        "solution": "Inspect and repair session management subsystems."
+    },
+    "SESSION3_INITIALIZATION_FAILED": {
+        "hexcode": "0x0000006F",
+        "definition": "A critical error occurred in session management during the system boot process.",
+        "solution": "Debug session-related errors and ensure the integrity of system files."
+    },
+    "SESSION4_INITIALIZATION_FAILED": {
+        "hexcode": "0x00000070",
+        "definition": "Another session initialization component failed to load.",
+        "solution": "Check logs for session management issues and repair system files."
+    },
+    "SESSION5_INITIALIZATION_FAILED": {
+        "hexcode": "0x00000071",
+        "definition": "A failure occurred during the initialization of a specific session-related component.",
+        "solution": "Ensure session components are correctly configured and up-to-date."
+    },
+    "ASSIGN_DRIVE_LETTERS_FAILED": {
+        "hexcode": "0x00000072",
+        "definition": "The system failed to assign drive letters during initialization.",
+        "solution": "Inspect disk management settings and ensure all drives are correctly configured."
+    },
+    "CONFIG_LIST_FAILED": {
+        "hexcode": "0x00000073",
+        "definition": "The configuration manager failed to allocate or process a configuration list.",
+        "solution": "Run system diagnostics, repair the registry, or restore from a backup."
+    },
+    "BAD_SYSTEM_CONFIG_INFO": {
+        "hexcode": "0x00000074",
+        "definition": "The system configuration is corrupt or incompatible.",
+        "solution": "Check for hardware issues, restore the registry, or perform a system repair."
+    },
+    "CANNOT_WRITE_CONFIGURATION": {
+        "hexcode": "0x00000075",
+        "definition": "The system was unable to write configuration information to storage.",
+        "solution": "Check disk integrity, repair the registry, or free up disk space."
+    },
+    "PROCESS_HAS_LOCKED_PAGES": {
+        "hexcode": "0x00000076",
+        "definition": "A process has locked memory pages that were not properly unlocked.",
+        "solution": "Identify and troubleshoot the faulty driver or process using memory debugging tools."
+    },
+    "KERNEL_STACK_INPAGE_ERROR": {
+        "hexcode": "0x00000077",
+        "definition": "The system was unable to retrieve a page of kernel data from the paging file.",
+        "solution": "Check for disk errors, bad sectors, or failing storage devices. Run chkdsk and memory diagnostics."
+    },
+    "PHASE0_EXCEPTION": {
+        "hexcode": "0x00000078",
+        "definition": "An exception occurred during the initial boot phase (Phase 0).",
+        "solution": "Verify the integrity of boot files and hardware components."
+    },
+    "MISMATCHED_HAL": {
+        "hexcode": "0x00000079",
+        "definition": "The installed Hardware Abstraction Layer (HAL) does not match the system hardware.",
+        "solution": "Install the correct HAL version or reinstall the operating system."
+    },
+    "KERNEL_DATA_INPAGE_ERROR": {
+        "hexcode": "0x0000007A",
+        "definition": "The requested page of kernel data could not be read from the paging file into memory.",
+        "solution": "Run disk and memory diagnostics to check for hardware failures or corrupt files."
+    },
+    "INACCESSIBLE_BOOT_DEVICE": {
+        "hexcode": "0x0000007B",
+        "definition": "The system failed to access the boot device during startup.",
+        "solution": "Check boot order in BIOS/UEFI, repair the bootloader, or verify the storage device connection."
+    },
+    "BUGCODE_NDIS_DRIVER": {
+        "hexcode": "0x0000007C",
+        "definition": "An error occurred in a Network Driver Interface Specification (NDIS) driver.",
+        "solution": "Update or rollback the NDIS driver and check for network hardware compatibility."
+    },
+    "INSTALL_MORE_MEMORY": {
+        "hexcode": "0x0000007D",
+        "definition": "The system does not have enough memory to run the required processes.",
+        "solution": "Upgrade the system's physical memory (RAM) or optimize resource usage."
+    },
+    "SYSTEM_THREAD_EXCEPTION_NOT_HANDLED": {
+        "hexcode": "0x0000007E",
+        "definition": "A system thread caused an unhandled exception.",
+        "solution": "Check for driver updates or rollbacks, and analyze crash dump files for the faulty module."
+    },
+    "UNEXPECTED_KERNEL_MODE_TRAP": {
+        "hexcode": "0x0000007F",
+        "definition": "The kernel encountered an unexpected trap condition.",
+        "solution": "Inspect for hardware issues (RAM, CPU, or motherboard), and verify driver integrity."
+    },
+    "NMI_HARDWARE_FAILURE": {
+        "hexcode": "0x00000080",
+        "definition": "A hardware malfunction triggered a non-maskable interrupt (NMI).",
+        "solution": "Test hardware components, especially memory and CPU, for stability and failures."
+    },
+    "SPIN_LOCK_INIT_FAILURE": {
+        "hexcode": "0x00000081",
+        "definition": "A failure occurred during the initialization of a spin lock.",
+        "solution": "Debug the system initialization process and verify hardware and driver compatibility."
+    },
+    "DFS_FILE_SYSTEM": {
+        "hexcode": "0x00000082",
+        "definition": "An error was detected in the Distributed File System (DFS).",
+        "solution": "Check DFS configurations, update related drivers, and verify file system integrity."
+    },
+    "SETUP_FAILURE": {
+        "hexcode": "0x00000083",
+        "definition": "A failure occurred during the system setup process.",
+        "solution": "Reattempt the setup process, verify installation media integrity, or check hardware compatibility."
+    },
+    "MBR_CHECKSUM_MISMATCH": {
+        "hexcode": "0x00000084",
+        "definition": "The Master Boot Record (MBR) checksum does not match the expected value.",
+        "solution": "Repair or recreate the MBR using recovery tools like Bootrec or a fresh OS installation."
+    },
+    "KERNEL_MODE_EXCEPTION_NOT_HANDLED": {
+        "hexcode": "0x0000008E",
+        "definition": "A kernel-mode program generated an exception that the error handler did not catch.",
+        "solution": "Analyze the crash dump for faulty drivers or memory issues."
+    },
+    "PP0_INITIALIZATION_FAILED": {
+        "hexcode": "0x0000008F",
+        "definition": "The system's preprocessor failed to initialize (Phase 0).",
+        "solution": "Verify system file integrity and troubleshoot the boot process."
+    },
+    "PP1_INITIALIZATION_FAILED": {
+        "hexcode": "0x00000090",
+        "definition": "The system's preprocessor failed to initialize (Phase 1).",
+        "solution": "Inspect the system logs for specific errors and restore or repair system files."
+    },
+    "UP_DRIVER_ON_MP_SYSTEM": {
+        "hexcode": "0x00000092",
+        "definition": "A uniprocessor (UP) driver was loaded on a multiprocessor (MP) system.",
+        "solution": "Install the correct driver for multiprocessor systems or configure the system appropriately."
+    },
+    "INVALID_KERNEL_HANDLE": {
+        "hexcode": "0x00000093",
+        "definition": "A driver or program accessed an invalid kernel handle.",
+        "solution": "Debug the driver or application and check for improper kernel API usage."
+    },
+    "KERNEL_STACK_LOCKED_AT_EXIT": {
+        "hexcode": "0x00000094",
+        "definition": "A driver or process did not properly unlock the kernel stack during exit.",
+        "solution": "Identify the faulty driver or application and debug for resource management issues."
+    },
+    "INVALID_WORK_QUEUE_ITEM": {
+        "hexcode": "0x00000096",
+        "definition": "A driver queued an invalid work item.",
+        "solution": "Update or debug the faulty driver to resolve the invalid queueing behavior."
+    },
+    "BOUND_IMAGE_UNSUPPORTED": {
+        "hexcode": "0x00000097",
+        "definition": "The system attempted to load a bound image that is unsupported.",
+        "solution": "Ensure that all drivers and system files are compatible with the current operating system."
+    },
+    "END_OF_NT_EVALUATION_PERIOD": {
+        "hexcode": "0x00000098",
+        "definition": "The evaluation period for the version of Windows has expired.",
+        "solution": "Upgrade to a licensed version of Windows or reactivate the operating system with a valid product key."
+    },
+    "INVALID_REGION_OR_SEGMENT": {
+        "hexcode": "0x00000099",
+        "definition": "A process accessed an invalid memory region or segment.",
+        "solution": "Analyze memory allocations in the application or driver causing the issue and ensure proper pointer usage."
+    },
+    "SYSTEM_LICENSE_VIOLATION": {
+        "hexcode": "0x0000009A",
+        "definition": "The system detected a violation in the licensing terms or activation.",
+        "solution": "Revalidate the system license with the correct product key or contact Microsoft support for assistance."
+    },
+    "UDFS_FILE_SYSTEM": {
+        "hexcode": "0x0000009B",
+        "definition": "An error occurred in the Universal Disk File System (UDFS).",
+        "solution": "Check the UDFS storage device for corruption and update drivers for the optical or removable storage."
+    },
+    "MACHINE_CHECK_EXCEPTION": {
+        "hexcode": "0x0000009C",
+        "definition": "A hardware error occurred, often related to the CPU or memory.",
+        "solution": "Check for overheating, run hardware diagnostics, and ensure components are securely seated and functioning correctly."
+    },
+    "USER_MODE_HEALTH_MONITOR": {
+        "hexcode": "0x0000009E",
+        "definition": "The user-mode health monitoring system detected a problem with a critical process.",
+        "solution": "Check for failing applications, corrupted system files, or rogue processes. Use Event Viewer for details."
+    },
+    "DRIVER_POWER_STATE_FAILURE": {
+        "hexcode": "0x0000009F",
+        "definition": "A driver failed to change its power state properly.",
+        "solution": "Update or rollback device drivers, particularly for power-related components like GPUs or network adapters."
+    },
+    "INTERNAL_POWER_ERROR": {
+        "hexcode": "0x000000A0",
+        "definition": "A critical internal power management error occurred.",
+        "solution": "Check power supply settings, ensure proper driver installation, and troubleshoot hibernation or sleep configurations."
+    },
+    "PCI_BUS_DRIVER_INTERNAL": {
+        "hexcode": "0x000000A1",
+        "definition": "The PCI bus driver encountered an internal error.",
+        "solution": "Update chipset or PCI bus drivers, and verify the integrity of connected hardware devices."
+    },
+    "MEMORY_IMAGE_CORRUPT": {
+        "hexcode": "0x000000A2",
+        "definition": "A memory dump image is corrupted or unreadable.",
+        "solution": "Verify system memory for errors and ensure proper configuration for creating memory dumps."
+    },
+    "ACPI_DRIVER_INTERNAL": {
+        "hexcode": "0x000000A3",
+        "definition": "The ACPI driver encountered an internal issue.",
+        "solution": "Update the BIOS/UEFI and ensure all ACPI-compliant drivers are correctly installed."
+    },
+    "CNSS_FILE_SYSTEM_FILTER": {
+        "hexcode": "0x000000A4",
+        "definition": "An error occurred in the CNSS file system filter.",
+        "solution": "Check the associated file system filter drivers and update or remove third-party software."
+    },
+    "ACPI_BIOS_ERROR": {
+        "hexcode": "0x000000A5",
+        "definition": "The ACPI BIOS is not compliant with ACPI specifications.",
+        "solution": "Update the BIOS/UEFI firmware and verify hardware compatibility."
+    },
+    "BAD_EXHANDLE": {
+        "hexcode": "0x000000A7",
+        "definition": "A program or driver passed a bad handle to an executive routine.",
+        "solution": "Debug the application or driver, and check for proper handle usage and cleanup."
+    },
+    "HAL_MEMORY_ALLOCATION": {
+        "hexcode": "0x000000A8",
+        "definition": "The Hardware Abstraction Layer (HAL) failed to allocate necessary memory.",
+        "solution": "Inspect hardware configuration and ensure adequate system resources are available."
+    },
+    "VIDEO_DRIVER_DEBUG_REPORT_REQUEST": {
+        "hexcode": "0x000000A9",
+        "definition": "The video driver requested a debug report for troubleshooting purposes.",
+        "solution": "Check for updates to the video driver and analyze the generated debug report for details."
+    },
+    "BGI_DETECTED_VIOLATION": {
+        "hexcode": "0x000000AA",
+        "definition": "The Boot Graphics Input (BGI) system detected a violation.",
+        "solution": "Update graphics drivers and troubleshoot boot graphics-related components."
+    },
+    "VIDEO_DRIVER_INIT_FAILURE": {
+        "hexcode": "0x000000B4",
+        "definition": "The video driver failed to initialize properly.",
+        "solution": "Reinstall or update the video driver, and verify GPU hardware functionality."
+    },
+    "ATTEMPTED_SWITCH_FROM_DPC": {
+        "hexcode": "0x000000B8",
+        "definition": "A Direct Process Call (DPC) routine attempted to switch to another thread improperly.",
+        "solution": "Analyze drivers for improper thread handling and update or debug the affected driver."
+    },
+    "CHIPSET_DETECTED_ERROR": {
+        "hexcode": "0x000000B9",
+        "definition": "An error occurred in the system's chipset.",
+        "solution": "Update chipset drivers and ensure proper hardware configuration."
+    },
+    "SESSION_HAS_VALID_VIEWS_ON_EXIT": {
+        "hexcode": "0x000000BA",
+        "definition": "A session had active views remaining during exit.",
+        "solution": "Troubleshoot session handling in drivers or applications and resolve resource cleanup issues."
+    },
+    "NETWORK_BOOT_INITIALIZATION_FAILED": {
+        "hexcode": "0x000000BB",
+        "definition": "The system failed to initialize a network boot.",
+        "solution": "Verify network boot settings in BIOS/UEFI and ensure network infrastructure is properly configured."
+    },
+    "NETWORK_BOOT_DUPLICATE_ADDRESS": {
+        "hexcode": "0x000000BC",
+        "definition": "A duplicate IP address was detected during a network boot.",
+        "solution": "Resolve IP conflicts in the network and reconfigure DHCP or static IP settings."
+    },
+    "INVALID_HIBERNATED_STATE": {
+        "hexcode": "0x000000BD",
+        "definition": "The system encountered an invalid state while resuming from hibernation.",
+        "solution": "Delete the hibernation file and re-enable hibernation settings if necessary."
+    },
+    "ATTEMPTED_WRITE_TO_READONLY_MEMORY": {
+        "hexcode": "0x000000BE",
+        "definition": "A driver attempted to write to a read-only memory segment.",
+        "solution": "Update or debug the offending driver and ensure memory protection mechanisms are respected."
+    },
+    "MUTEX_ALREADY_OWNED": {
+        "hexcode": "0x000000BF",
+        "definition": "A mutex was already owned by a thread attempting to acquire it again.",
+        "solution": "Analyze the application's or driver's mutex handling logic for deadlocks or misuse."
+    },
+    "SPECIAL_POOL_DETECTED_MEMORY_CORRUPTION": {
+        "hexcode": "0x000000C1",
+        "definition": "Special pool detected memory corruption, often due to a driver issue.",
+        "solution": "Enable Driver Verifier to identify the faulty driver and update or replace it."
+    },
+    "BAD_POOL_CALLER": {
+        "hexcode": "0x000000C2",
+        "definition": "A process or driver made an invalid pool request.",
+        "solution": "Debug the driver or process causing the error and ensure valid memory management operations."
+    },
+    "DRIVER_VERIFIER_DETECTED_VIOLATION": {
+        "hexcode": "0x000000C4",
+        "definition": "Driver Verifier detected a violation in a driver.",
+        "solution": "Analyze the crash dump file and update or debug the offending driver."
+    },
+    "DRIVER_CORRUPTED_EXPOOL": {
+        "hexcode": "0x000000C5",
+        "definition": "A driver corrupted the system's extended pool.",
+        "solution": "Enable Driver Verifier to identify the problematic driver and debug or replace it."
+    },
+    "DRIVER_CAUGHT_MODIFYING_FREED_POOL": {
+        "hexcode": "0x000000C6",
+        "definition": "A driver attempted to modify memory that was already freed.",
+        "solution": "Inspect and debug the offending driver for proper memory handling."
+    },
+    "TIMER_OR_DPC_INVALID": {
+        "hexcode": "0x000000C7",
+        "definition": "A timer or Deferred Procedure Call (DPC) was invalid.",
+        "solution": "Check for driver-related DPC issues and update or debug affected drivers."
+    },
+    "IRQL_UNEXPECTED_VALUE": {
+        "hexcode": "0x000000C8",
+        "definition": "An unexpected interrupt request level (IRQL) was encountered.",
+        "solution": "Inspect interrupt handling in drivers and ensure proper IRQL transitions."
+    },
+    "DRIVER_VERIFIER_IOMANAGER_VIOLATION": {
+        "hexcode": "0x000000C9",
+        "definition": "Driver Verifier detected a violation in the I/O Manager operations.",
+        "solution": "Analyze the crash dump file to identify the offending driver, update or replace the driver, and test the system without Driver Verifier enabled."
+    },
+    "PNP_DETECTED_FATAL_ERROR": {
+        "hexcode": "0x000000CA",
+        "definition": "A fatal error occurred in the Plug and Play (PnP) system, often caused by driver or hardware issues.",
+        "solution": "Check the PnP-related drivers and update them. If recent hardware changes were made, verify compatibility and reseat the hardware components."
+    },
+    "DRIVER_LEFT_LOCKED_PAGES_IN_PROCESS": {
+        "hexcode": "0x000000CB",
+        "definition": "A driver failed to release locked memory pages, leading to a resource leak.",
+        "solution": "Identify the faulty driver using memory dump analysis tools, update or reinstall the driver, and run a full system diagnostic."
+    },
+    "PAGE_FAULT_IN_FREED_SPECIAL_POOL": {
+        "hexcode": "0x000000CC",
+        "definition": "A page fault occurred in a memory area that was already freed, typically caused by a buggy driver.",
+        "solution": "Run Driver Verifier to detect the problematic driver and replace or update it. Use memory debugging tools to verify consistency."
+    },
+    "PAGE_FAULT_BEYOND_END_OF_ALLOCATION": {
+        "hexcode": "0x000000CD",
+        "definition": "A page fault occurred in an invalid memory region beyond the allocation boundary.",
+        "solution": "Use debugging tools to identify the faulty driver or application. Check for buffer overflows or memory mismanagement in system logs."
+    },
+    "DRIVER_UNLOADED_WITHOUT_CANCELLING_PENDING_OPERATIONS": {
+        "hexcode": "0x000000CE",
+        "definition": "A driver was unloaded while pending operations were not canceled, leading to system instability.",
+        "solution": "Enable Driver Verifier to identify the driver, review its unloading routine, and replace it with an updated version."
+    },
+    "TERMINAL_SERVER_DRIVER_MADE_INCORRECT_MEMORY_REFERENCE": {
+        "hexcode": "0x000000CF",
+        "definition": "A Terminal Server driver referenced invalid memory, leading to an exception.",
+        "solution": "Check and update Terminal Server-related drivers and configurations. Ensure compatibility with the system version."
+    },
+    "DRIVER_CORRUPTED_MMPOOL": {
+        "hexcode": "0x000000D0",
+        "definition": "A driver caused corruption in the memory management pool.",
+        "solution": "Run Driver Verifier, locate the problematic driver, and update or replace it. Check for memory hardware errors."
+    },
+    "DRIVER_IRQL_NOT_LESS_OR_EQUAL": {
+        "hexcode": "0x000000D1",
+        "definition": "A driver accessed invalid memory while at an incorrect IRQL level.",
+        "solution": "Use debugging tools to find the offending driver, update or reinstall it, and ensure correct hardware configurations."
+    },
+    "BUGCODE_ID_DRIVER": {
+        "hexcode": "0x000000D2",
+        "definition": "A driver error related to input device operations.",
+        "solution": "Verify the input device driver and update it. Run diagnostic tools for input-related issues."
+    },
+    "DRIVER_PORTION_MUST_BE_NONPAGED": {
+        "hexcode": "0x000000D3",
+        "definition": "A driver referenced memory that was paged out while it should have been non-paged.",
+        "solution": "Identify the faulty driver using the crash dump file and replace it with a properly functioning version."
+    },
+    "SYSTEM_SCAN_AT_RAISED_IRQL_CAUGHT_IMPROPER_DRIVER_UNLOAD": {
+        "hexcode": "0x000000D4",
+        "definition": "A driver was unloaded while the system was scanning for IRQL levels, violating protocol.",
+        "solution": "Analyze the crash dump for driver details, update the driver, and ensure proper unload routines are implemented."
+    },
+    "DRIVER_PAGE_FAULT_IN_FREED_SPECIAL_POOL": {
+        "hexcode": "0x000000D5",
+        "definition": "A driver attempted to access memory in a freed special pool region.",
+        "solution": "Enable Driver Verifier to catch the issue during runtime and update the offending driver."
+    },
+    "DRIVER_PAGE_FAULT_BEYOND_END_OF_ALLOCATION": {
+        "hexcode": "0x000000D6",
+        "definition": "A driver accessed a memory region beyond the allocated bounds.",
+        "solution": "Locate the driver using debugging tools, review its memory operations, and update it."
+    },
+    "DRIVER_UNMAPPING_INVALID_VIEW": {
+        "hexcode": "0x000000D7",
+        "definition": "A driver tried to unmap a memory view that was invalid or not mapped.",
+        "solution": "Review the driver code or update the driver. Use memory debugging tools to trace unmapping calls."
+    },
+    "DRIVER_USED_EXCESSIVE_PTES": {
+        "hexcode": "0x000000D8",
+        "definition": "A driver exhausted the system's page table entries (PTEs).",
+        "solution": "Analyze system PTE usage and check for excessive memory allocation by drivers. Update drivers if needed."
+    },
+    "LOCKED_PAGES_TRACKER_CORRUPTION": {
+        "hexcode": "0x000000D9",
+        "definition": "The locked pages tracker detected corruption in its records.",
+        "solution": "Enable Driver Verifier to track locked pages and identify the driver responsible. Update or replace the driver."
+    },
+    "SYSTEM_PTE_MISUSE": {
+        "hexcode": "0x000000DA",
+        "definition": "A driver misused system PTEs, causing corruption or resource exhaustion.",
+        "solution": "Examine the driver responsible using debugging tools and update or replace it."
+    },
+    "DRIVER_CORRUPTED_SYSPTES": {
+        "hexcode": "0x000000DB",
+        "definition": "A driver caused corruption in the system page table entries (PTEs).",
+        "solution": "Run Driver Verifier, update the offending driver, and analyze system memory configurations."
+    },
+    "DRIVER_INVALID_STACK_ACCESS": {
+        "hexcode": "0x000000DC",
+        "definition": "A driver accessed the stack in an invalid way, causing corruption or exceptions.",
+        "solution": "Identify and update the faulty driver using debugging tools. Review driver stack operations."
+    },
+    "POOL_CORRUPTION_IN_FILE_AREA": {
+        "hexcode": "0x000000DE",
+        "definition": "Corruption was detected in a pool area related to file operations.",
+        "solution": "Enable Driver Verifier and inspect recent driver installations or updates related to file handling."
+    },
+    "IMPERSONATING_WORKER_THREAD": {
+        "hexcode": "0x000000DF",
+        "definition": "A worker thread tried to impersonate improperly, causing security violations.",
+        "solution": "Inspect thread handling in drivers or applications, update the faulty driver, and review impersonation routines."
+    },
+    "ACPI_BIOS_FATAL_ERROR": {
+        "hexcode": "0x000000E0",
+        "definition": "An ACPI BIOS error occurred due to incompatibility or corruption.",
+        "solution": "Update the BIOS to the latest version and ensure system drivers are ACPI-compliant."
+    },
+    "WORKER_THREAD_RETURNED_AT_BAD_IRQL": {
+        "hexcode": "0x000000E1",
+        "definition": "A worker thread returned to the system at an incorrect IRQL level.",
+        "solution": "Update the driver responsible for managing worker threads. Use debugging tools for detailed analysis."
+    },
+    "MANUALLY_INITIATED_CRASH": {
+        "hexcode": "0x000000E2",
+        "definition": "A manual crash was initiated for debugging purposes.",
+        "solution": "Analyze the crash dump and logs to diagnose the issue causing the manual initiation."
+    },
+    "RESOURCE_NOT_OWNED": {
+        "hexcode": "0x000000E3",
+        "definition": "A thread attempted to release a resource it did not own.",
+        "solution": "Check recent driver or application changes. Use debugging tools to identify the source of the error."
+    },
+    "WORKER_INVALID": {
+        "hexcode": "0x000000E4",
+        "definition": "An invalid worker thread operation was detected.",
+        "solution": "Analyze the thread creation and termination routines in drivers. Update any faulty drivers."
+    },
+    "DRIVER_VERIFIER_DMA_VIOLATION": {
+        "hexcode": "0x000000E5",
+        "definition": "Driver Verifier detected a violation in DMA operations.",
+        "solution": "Update the faulty driver identified by Driver Verifier. Verify DMA settings and compatibility."
+    },
+    "INVALID_FLOATING_POINT_STATE": {
+        "hexcode": "0x000000C5",
+        "definition": "The system encountered an invalid floating point state, usually caused by faulty hardware or software attempting to execute floating point operations incorrectly.",
+        "solution": "Check for faulty hardware (especially the CPU), update drivers, and ensure that the software running is compatible with the system’s hardware."
+    },
+    "INVALID_CANCEL_OF_FILE_OPEN": {
+        "hexcode": "0x000000D1",
+        "definition": "An invalid cancellation of a file open operation occurred, often due to a driver or file system error.",
+        "solution": "Ensure all drivers, especially disk and file system drivers, are updated. Run a file system check and verify no conflicts in I/O operations."
+    },
+    "ACTIVE_EX_WORKER_THREAD_TERMINATION": {
+        "hexcode": "0x000000F0",
+        "definition": "The system detected the termination of an active EX worker thread, which can result in data corruption or system instability.",
+        "solution": "Check for driver or hardware issues related to worker thread management. Ensure the system is free of corrupted system files or memory errors."
+    },
+    "THREAD_STUCK_IN_DEVICE_DRIVER": {
+        "hexcode": "0x000000EA",
+        "definition": "A thread in the device driver was stuck, typically due to a malfunctioning driver or a hardware conflict.",
+        "solution": "Update the drivers, particularly for graphics and network devices. If the issue persists, test the hardware components for failure."
+    },
+    "DIRTY_MAPPED_PAGES_CONGESTION": {
+        "hexcode": "0x0000005F",
+        "definition": "The system encountered congestion due to dirty mapped pages, typically related to memory or storage issues.",
+        "solution": "Check for disk space issues, run memory diagnostics, and ensure that memory is properly allocated and managed."
+    },
+    "SESSION_HAS_VALID_SPECIAL_POOL_ON_EXIT": {
+        "hexcode": "0x0000003E",
+        "definition": "The system detected a session exit with a valid special pool, leading to memory corruption or instability.",
+        "solution": "Ensure the system is free of memory corruption, and check for driver issues or improper handling of special pools."
+    },
+    "UNMOUNTABLE_BOOT_VOLUME": {
+        "hexcode": "0x000000ED",
+        "definition": "The boot volume could not be mounted, which can occur due to disk corruption or file system issues.",
+        "solution": "Run a disk check (chkdsk) and check the file system for corruption. Repair the boot volume if necessary."
+    },
+    "CRITICAL_PROCESS_DIED": {
+        "hexcode": "0x000000EF",
+        "definition": "A critical system process has unexpectedly terminated, preventing the system from functioning correctly.",
+        "solution": "Restore the system from a backup, run system repair tools, or reinstall the operating system."
+    },
+    "STORAGE_MINIPORT_ERROR": {
+        "hexcode": "0x0000007A",
+        "definition": "The storage miniport driver encountered an error, typically due to hardware failure or driver corruption.",
+        "solution": "Update the storage driver, check the hardware for defects, and ensure that the system's storage configuration is correct."
+    },
+    "SCSI_VERIFIER_DETECTED_VIOLATION": {
+        "hexcode": "0x000000C4",
+        "definition": "A violation was detected by the SCSI verifier, possibly related to incorrect or corrupted storage operations.",
+        "solution": "Update the SCSI drivers, check for hardware issues, and disable the SCSI verifier if it's not necessary for troubleshooting."
+    },
+    "HARDWARE_INTERRUPT_STORM": {
+        "hexcode": "0x000000A4",
+        "definition": "A hardware interrupt storm occurred, typically due to faulty hardware or incorrect configuration.",
+        "solution": "Check hardware components for defects, ensure that interrupt requests are properly configured, and update related drivers."
+    },
+    "DISORDERLY_SHUTDOWN": {
+        "hexcode": "0x000000F4",
+        "definition": "The system experienced an improper shutdown, which could indicate issues with hardware or power supply.",
+        "solution": "Ensure that power settings are correct, check for hardware failure, and update drivers to prevent improper shutdowns."
+    },
+    "CRITICAL_OBJECT_TERMINATION": {
+        "hexcode": "0x000000F4",
+        "definition": "A critical system object or resource was unexpectedly terminated, causing instability.",
+        "solution": "Check event logs for specific errors, and ensure critical system files are intact. Restore the system if necessary."
+    },
+    "FLTMGR_FILE_SYSTEM": {
+        "hexcode": "0x00000024",
+        "definition": "An error occurred with the filter manager of the file system, which might indicate file system corruption.",
+        "solution": "Run disk check utilities (chkdsk) and verify that the file system drivers are updated and correctly configured."
+    },
+    "PCI_VERIFIER_DETECTED_VIOLATION": {
+        "hexcode": "0x000000F7",
+        "definition": "A violation was detected by the PCI verifier, typically indicating a misconfigured or malfunctioning PCI device.",
+        "solution": "Update or reinstall PCI drivers, check hardware compatibility, and resolve any conflicts between PCI devices."
+    },
+    "DRIVER_OVERRAN_STACK_BUFFER": {
+        "hexcode": "0x000000F7",
+        "definition": "A driver overran a stack buffer, which may lead to data corruption or instability.",
+        "solution": "Update drivers, check for buffer overflows, and ensure proper memory handling in driver code."
+    },
+    "RAMDISK_BOOT_INITIALIZATION_FAILED": {
+        "hexcode": "0x0000007A",
+        "definition": "The RAM disk failed to initialize during boot, which could be related to a configuration or driver issue.",
+        "solution": "Verify RAM disk configuration, ensure enough memory is available, and check for related driver updates."
+    },
+    "DRIVER_RETURNED_STATUS_REPARSE_FOR_VOLUME_OPEN": {
+        "hexcode": "0x0000002F",
+        "definition": "A driver returned an incorrect status during the opening of a volume, leading to instability.",
+        "solution": "Ensure the file system drivers are up to date and that no incompatible software is installed."
+    },
+    "HTTP_DRIVER_CORRUPTED": {
+        "hexcode": "0x00000109",
+        "definition": "A corruption occurred in the HTTP driver, potentially caused by a bad update or conflict with other network drivers.",
+        "solution": "Reinstall or update network-related drivers, and ensure there are no conflicts in the HTTP configuration."
+    },
+    "ATTEMPTED_EXECUTE_OF_NOEXECUTE_MEMORY": {
+        "hexcode": "0x000000FC",
+        "definition": "The system attempted to execute code from a memory page marked as non-executable, leading to a crash.",
+        "solution": "Check for malware or unauthorized software attempting to execute from protected areas. Run memory diagnostics and security scans."
+    },
+    "DIRTY_NOWRITE_PAGES_CONGESTION": {
+        "hexcode": "0x0000005F",
+        "definition": "The system encountered congestion due to dirty pages that could not be written to memory, leading to instability.",
+        "solution": "Run disk cleanup, free up space, and check for issues with memory paging and storage systems."
+    },
+    "BUGCODE_USB_DRIVER": {
+        "hexcode": "0x000000FE",
+        "definition": "A USB driver caused an error, which might be due to hardware failure, outdated drivers, or configuration issues.",
+        "solution": "Update or reinstall USB drivers, check USB hardware for malfunctions, and ensure that USB ports are configured correctly."
+    },
+    "RESERVE_QUEUE_OVERFLOW": {
+        "hexcode": "0x0000006A",
+        "definition": "The system encountered a reserve queue overflow, typically related to issues with memory or device communication.",
+        "solution": "Check memory settings, increase system resources, and verify device drivers for correct queue management."
+    },
+    "LOADER_BLOCK_MISMATCH": {
+        "hexcode": "0x000000A4",
+        "definition": "A mismatch was detected in the loader block, potentially due to corrupted boot data or a misconfigured boot manager.",
+        "solution": "Run boot repair utilities, check boot configuration, and restore system from a backup if necessary."
+    },
+    "CLOCK_WATCHDOG_TIMEOUT": {
+        "hexcode": "0x00000101",
+        "definition": "The processor failed to respond within a certain time frame, which may indicate hardware issues.",
+        "solution": "Check CPU and memory for hardware defects, and ensure that system power and clock settings are correct."
+    },
+    "DPC_WATCHDOG_TIMEOUT": {
+        "hexcode": "0x00000133",
+        "definition": "A Deferred Procedure Call (DPC) took too long to complete, causing a timeout.",
+        "solution": "Update drivers, especially for devices like graphics and network adapters, and check for hardware issues."
+    },
+    "MUP_FILE_SYSTEM": {
+        "hexcode": "0x0000002E",
+        "definition": "An error occurred with the Multiple UNC Provider (MUP) file system driver, which is responsible for accessing network files.",
+        "solution": "Update file system drivers and check network configurations for issues that could interfere with file system operations."
+    },
+    "AGP_INVALID_ACCESS": {
+        "hexcode": "0x000000EA",
+        "definition": "An invalid access error occurred in the Accelerated Graphics Port (AGP) system, typically caused by faulty hardware or driver conflicts.",
+        "solution": "Check for hardware issues with the GPU, and ensure that the correct drivers for the graphics card and chipset are installed."
+    },
+    "AGP_GART_CORRUPTION": {
+        "hexcode": "0x000000EB",
+        "definition": "The Graphics Address Remapping Table (GART) in the AGP system became corrupted, causing instability.",
+        "solution": "Update the GPU drivers, check for faulty RAM or hardware, and ensure that the AGP configuration is correct."
+    },
+    "AGP_ILLEGALLY_REPROGRAMMED": {
+        "hexcode": "0x000000EC",
+        "definition": "The AGP configuration was reprogrammed in an illegal manner, typically by a driver or application.",
+        "solution": "Update graphics drivers, check for system overclocking issues, and ensure the GPU is functioning correctly."
+    },
+    "THIRD_PARTY_FILE_SYSTEM_FAILURE": {
+        "hexcode": "0x00000023",
+        "definition": "A third-party file system driver caused a failure, which may be due to incompatibilities or corruption.",
+        "solution": "Uninstall or update third-party file system drivers and ensure system files are intact."
+    },
+    "CRITICAL_STRUCTURE_CORRUPTION": {
+        "hexcode": "0x0000009C",
+        "definition": "Critical system structures have become corrupted, often due to hardware failure or data corruption.",
+        "solution": "Run hardware diagnostics, check for memory issues, and verify system integrity with built-in repair tools."
+    },
+    "APP_TAGGING_INITIALIZATION_FAILED": {
+        "hexcode": "0x000000C1",
+        "definition": "The system failed to initialize application tagging, possibly due to an issue with the tag manager or system configuration.",
+        "solution": "Check system configuration and ensure that application tagging is set up correctly."
+    },
+    "FSRTL_EXTRA_CREATE_PARAMETER_VIOLATION": {
+        "hexcode": "0x00000024",
+        "definition": "A violation occurred while processing file system operations, specifically related to the extra create parameters.",
+        "solution": "Update file system drivers and check for inconsistencies in the system file configuration."
+    },
+    "WDF_VIOLATION": {
+        "hexcode": "0x000000E3",
+        "definition": "A violation occurred within the Windows Driver Framework (WDF), typically due to faulty drivers or conflicts.",
+        "solution": "Update drivers that use the Windows Driver Framework, and check for system conflicts."
+    },
+    "VIDEO_MEMORY_MANAGEMENT_INTERNAL": {
+        "hexcode": "0x000000CE",
+        "definition": "An internal video memory management issue occurred, often related to graphics drivers or hardware.",
+        "solution": "Update graphics drivers, check the GPU for hardware issues, and ensure video memory is properly allocated."
+    },
+    "RESOURCE_MANAGER_EXCEPTION_NOT_HANDLED": {
+        "hexcode": "0x00000079",
+        "definition": "A resource manager exception was thrown but not handled, typically indicating a system-level error or driver issue.",
+        "solution": "Check for driver updates, especially for hardware resource management, and run system diagnostics."
+    },
+    "RECURSIVE_NMI": {
+        "hexcode": "0x000000F3",
+        "definition": "A non-maskable interrupt (NMI) occurred recursively, which could indicate a hardware fault.",
+        "solution": "Check for hardware failures, such as faulty CPU or memory, and replace malfunctioning components."
+    },
+    "MSRPC_STATE_VIOLATION": {
+        "hexcode": "0x0000007B",
+        "definition": "A violation in the state of Microsoft RPC (Remote Procedure Call) occurred, often due to communication issues.",
+        "solution": "Check RPC settings and configurations, and ensure that network communication is stable."
+    },
     "VIDEO_DXGKRNL_FATAL_ERROR": {},
     "VIDEO_SHADOW_DRIVER_FATAL_ERROR": {},
-    "AGP_INTERNAL": {},
-    "VIDEO_TDR_FAILURE": {},
-    "VIDEO_TDR_TIMEOUT_DETECTED": {},
-    "VIDEO_SCHEDULER_INTERNAL_ERROR": {},
-    "EM_INITIALIZATION_FAILURE": {},
-    "DRIVER_RETURNED_HOLDING_CANCEL_LOCK": {},
-    "ATTEMPTED_WRITE_TO_CM_PROTECTED_STORAGE": {},
-    "EVENT_TRACING_FATAL_ERROR": {},
-    "TOO_MANY_RECURSIVE_FAULTS": {},
-    "INVALID_DRIVER_HANDLE": {},
-    "BITLOCKER_FATAL_ERROR": {},
-    "DRIVER_VIOLATION": {},
-    "WHEA_INTERNAL_ERROR": {},
-    "CRYPTO_SELF_TEST_FAILURE": {},
-    "WHEA_UNCORRECTABLE_ERROR": {},
-    "NMR_INVALID_STATE": {},
-    "NETIO_INVALID_POOL_CALLER": {},
-    "PAGE_NOT_ZERO": {},
-    "WORKER_THREAD_RETURNED_WITH_BAD_IO_PRIORITY": {},
-    "WORKER_THREAD_RETURNED_WITH_BAD_PAGING_IO_PRIORITY": {},
-    "MUI_NO_VALID_SYSTEM_LANGUAGE": {},
-    "FAULTY_HARDWARE_CORRUPTED_PAGE": {},
-    "EXFAT_FILE_SYSTEM": {},
-    "VOLSNAP_OVERLAPPED_TABLE_ACCESS": {},
-    "INVALID_MDL_RANGE": {},
-    "VHD_BOOT_INITIALIZATION_FAILED": {},
-    "DYNAMIC_ADD_PROCESSOR_MISMATCH": {},
-    "INVALID_EXTENDED_PROCESSOR_STATE": {},
-    "RESOURCE_OWNER_POINTER_INVALID": {},
-    "DPC_WATCHDOG_VIOLATION": {},
-    "DRIVE_EXTENDER": {},
-    "REGISTRY_FILTER_DRIVER_EXCEPTION": {},
-    "VHD_BOOT_HOST_VOLUME_NOT_ENOUGH_SPACE": {},
-    "WIN32K_HANDLE_MANAGER": {},
-    "GPIO_CONTROLLER_DRIVER_ERROR": {},
-    "KERNEL_SECURITY_CHECK_FAILURE": {},
-    "KERNEL_MODE_HEAP_CORRUPTION": {},
-    "PASSIVE_INTERRUPT_ERROR": {},
-    "INVALID_IO_BOOST_STATE": {},
-    "CRITICAL_INITIALIZATION_FAILURE": {},
-    "STORAGE_DEVICE_ABNORMALITY_DETECTED": {},
-    "PROCESSOR_DRIVER_INTERNAL": {},
-    "BUGCODE_USB3_DRIVER": {},
-    "SECURE_BOOT_VIOLATION": {},
-    "ABNORMAL_RESET_DETECTED": {},
-    "REFS_FILE_SYSTEM": {},
-    "KERNEL_WMI_INTERNAL": {},
-    "SOC_SUBSYSTEM_FAILURE": {},
-    "FATAL_ABNORMAL_RESET_ERROR": {},
-    "EXCEPTION_SCOPE_INVALID": {},
-    "SOC_CRITICAL_DEVICE_REMOVED": {},
-    "PDC_WATCHDOG_TIMEOUT": {},
-    "TCPIP_AOAC_NIC_ACTIVE_REFERENCE_LEAK": {},
-    "UNSUPPORTED_INSTRUCTION_MODE": {},
-    "INVALID_PUSH_LOCK_FLAGS": {},
-    "KERNEL_LOCK_ENTRY_LEAKED_ON_THREAD_TERMINATION": {},
-    "UNEXPECTED_STORE_EXCEPTION": {},
-    "OS_DATA_TAMPERING": {},
-    "KERNEL_THREAD_PRIORITY_FLOOR_VIOLATION": {},
-    "ILLEGAL_IOMMU_PAGE_FAULT": {},
-    "HAL_ILLEGAL_IOMMU_PAGE_FAULT": {},
-    "SDBUS_INTERNAL_ERROR": {},
-    "WORKER_THREAD_RETURNED_WITH_SYSTEM_PAGE_PRIORITY_ACTIVE": {},
-    "WIN32K_ATOMIC_CHECK_FAILURE": {},
-    "KERNEL_AUTO_BOOST_INVALID_LOCK_RELEASE": {},
-    "WORKER_THREAD_TEST_CONDITION": {},
-    "WIN32K_CRITICAL_FAILURE": {},
-    "INVALID_RUNDOWN_PROTECTION_FLAGS": {},
-    "INVALID_SLOT_ALLOCATOR_FLAGS": {},
-    "ERESOURCE_INVALID_RELEASE": {},
-    "CLUSTER_CSV_CLUSSVC_DISCONNECT_WATCHDOG": {},
-    "CRYPTO_LIBRARY_INTERNAL_ERROR": {},
-    "COREMSGCALL_INTERNAL_ERROR": {},
-    "COREMSG_INTERNAL_ERROR": {},
-    "ELAM_DRIVER_DETECTED_FATAL_ERROR": {},
-    "PROFILER_CONFIGURATION_ILLEGAL": {},
-    "MICROCODE_REVISION_MISMATCH": {},
-    "VIDEO_DWMINIT_TIMEOUT_FALLBACK_BDD": {},
-    "BAD_OBJECT_HEADER": {},
-    "SECURE_KERNEL_ERROR": {},
-    "HYPERGUARD_VIOLATION": {},
-    "SECURE_FAULT_UNHANDLED": {},
-    "KERNEL_PARTITION_REFERENCE_VIOLATION": {},
-    "PF_DETECTED_CORRUPTION": {},
-    "KERNEL_AUTO_BOOST_LOCK_ACQUISITION_WITH_RAISED_IRQL": {},
-    "LOADER_ROLLBACK_DETECTED": {},
-    "WIN32K_SECURITY_FAILURE": {},
-    "KERNEL_STORAGE_SLOT_IN_USE": {},
-    "WORKER_THREAD_RETURNED_WHILE_ATTACHED_TO_SILO": {},
-    "TTM_FATAL_ERROR": {},
-    "WIN32K_POWER_WATCHDOG_TIMEOUT": {},
-    "TTM_WATCHDOG_TIMEOUT": {},
-    "WIN32K_CALLOUT_WATCHDOG_BUGCHECK": {},
-    "EXCEPTION_ON_INVALID_STACK": {},
-    "UNWIND_ON_INVALID_STACK": {},
-    "FAST_ERESOURCE_PRECONDITION_VIOLATION": {},
-    "STORE_DATA_STRUCTURE_CORRUPTION": {},
-    "MANUALLY_INITIATED_POWER_BUTTON_HOLD": {},
-    "SYNTHETIC_WATCHDOG_TIMEOUT": {},
-    "INVALID_SILO_DETACH": {},
-    "INVALID_CALLBACK_STACK_ADDRESS": {},
-    "INVALID_KERNEL_STACK_ADDRESS": {},
+    "AGP_INTERNAL": {
+        "hexcode": "0x00000133",
+        "definition": "An internal error occurred in the Accelerated Graphics Port (AGP) driver.",
+        "solution": "Update the AGP driver, check for hardware issues, and ensure that the graphics card is properly seated."
+    },
+    "VIDEO_TDR_FAILURE": {
+        "hexcode": "0x00000116",
+        "definition": "The Timeout Detection and Recovery (TDR) feature failed to recover from a video timeout.",
+        "solution": "Update video drivers, check for overheating issues, and ensure proper cooling for the GPU."
+    },
+    "VIDEO_TDR_TIMEOUT_DETECTED": {
+        "hexcode": "0x00000117",
+        "definition": "A video timeout was detected, leading to the failure of the TDR mechanism.",
+        "solution": "Update GPU drivers, ensure proper system cooling, and check for hardware malfunctions in the video card."
+    },
+    "VIDEO_SCHEDULER_INTERNAL_ERROR": {
+        "hexcode": "0x00000119",
+        "definition": "An internal error was detected in the video scheduler, often related to GPU hardware or driver issues.",
+        "solution": "Update or reinstall GPU drivers. Check the GPU hardware for potential issues."
+    },
+    "EM_INITIALIZATION_FAILURE": {
+        "hexcode": "0x0000014D",
+        "definition": "The system failed to initialize the emergency manager (EM) due to a corruption or configuration error.",
+        "solution": "Check for corrupted system files and update drivers. Run a system file checker (sfc /scannow)."
+    },
+    "DRIVER_RETURNED_HOLDING_CANCEL_LOCK": {
+        "hexcode": "0x00000144",
+        "definition": "A driver improperly returned after holding a cancel lock, potentially causing system instability.",
+        "solution": "Update the affected drivers and check for hardware or driver conflicts."
+    },
+    "ATTEMPTED_WRITE_TO_CM_PROTECTED_STORAGE": {
+        "hexcode": "0x0000016B",
+        "definition": "The system attempted to write to protected system storage, which is restricted for security reasons.",
+        "solution": "Check for malicious software or security breaches, and ensure that the system's security settings are intact."
+    },
+    "EVENT_TRACING_FATAL_ERROR": {
+        "hexcode": "0x000001F4",
+        "definition": "An error occurred with event tracing, possibly related to system logs or kernel events.",
+        "solution": "Check event logs for clues about the error. Ensure that the tracing drivers and logs are configured correctly."
+    },
+    "TOO_MANY_RECURSIVE_FAULTS": {
+        "hexcode": "0x000000B5",
+        "definition": "A recursive fault occurred too many times, potentially due to an issue with system-level fault handling or drivers.",
+        "solution": "Update the system's drivers and software to address recursive faults. Run memory diagnostics to rule out hardware issues."
+    },
+    "INVALID_DRIVER_HANDLE": {
+        "hexcode": "0x0000007F",
+        "definition": "The system encountered an invalid driver handle, causing a crash or system instability.",
+        "solution": "Reinstall or update the driver causing the issue. Ensure the driver handle is properly initialized."
+    },
+    "BITLOCKER_FATAL_ERROR": {
+        "hexcode": "0x00000F00",
+        "definition": "A critical BitLocker error occurred, possibly due to disk corruption or a failed encryption process.",
+        "solution": "Check disk health, ensure proper BitLocker configuration, and attempt to decrypt the disk if necessary."
+    },
+    "DRIVER_VIOLATION": {
+        "hexcode": "0x000000C4",
+        "definition": "A driver violated system rules or caused corruption, resulting in an exception.",
+        "solution": "Update the driver causing the issue, and check for incompatibilities with other installed software."
+    },
+    "WHEA_INTERNAL_ERROR": {
+        "hexcode": "0x00000124",
+        "definition": "A hardware error was detected by the Windows Hardware Error Architecture (WHEA), indicating a potential failure of the CPU, RAM, or other critical hardware.",
+        "solution": "Check hardware components for failure, run diagnostics, and check for overheating or faulty hardware."
+    },
+    "CRYPTO_SELF_TEST_FAILURE": {
+        "hexcode": "0x000001F6",
+        "definition": "The system failed a cryptographic self-test, indicating possible corruption in security settings or software.",
+        "solution": "Reconfigure security software and check for corruption in encryption settings or certificate stores."
+    },
+    "WHEA_UNCORRECTABLE_ERROR": {
+        "hexcode": "0x00000124",
+        "definition": "An uncorrectable hardware error occurred, typically involving the CPU or memory.",
+        "solution": "Perform hardware diagnostics, check for overheating, and test the CPU and memory for defects."
+    },
+    "NMR_INVALID_STATE": {
+        "hexcode": "0x00000178",
+        "definition": "A network-related error occurred due to an invalid state within the network resource manager (NMR).",
+        "solution": "Update network drivers, check network configurations, and ensure that the network stack is functioning correctly."
+    },
+    "NETIO_INVALID_POOL_CALLER": {
+        "hexcode": "0x000000D3",
+        "definition": "A pool-based error occurred within the network input/output (NETIO) stack, typically related to invalid calls to memory pool functions.",
+        "solution": "Update network drivers and check for issues with memory allocation or pool management in network components."
+    },
+    "PAGE_NOT_ZERO": {
+        "hexcode": "0x00000175",
+        "definition": "A page of memory that was expected to be zero was found to contain non-zero data, which can cause system instability or crashes.",
+        "solution": "Run memory diagnostics and verify the integrity of system files using the sfc /scannow command."
+    },
+    "WORKER_THREAD_RETURNED_WITH_BAD_IO_PRIORITY": {
+        "hexcode": "0x00000177",
+        "definition": "A worker thread returned with an invalid input/output priority, causing system instability.",
+        "solution": "Check thread scheduling code and ensure proper I/O priorities are assigned to worker threads."
+    },
+    "WORKER_THREAD_RETURNED_WITH_BAD_PAGING_IO_PRIORITY": {
+        "hexcode": "0x00000178",
+        "definition": "A worker thread returned with an invalid paging I/O priority, leading to performance issues or crashes.",
+        "solution": "Review memory paging settings and ensure proper I/O prioritization in worker threads."
+    },
+    "MUI_NO_VALID_SYSTEM_LANGUAGE": {
+        "hexcode": "0x00000179",
+        "definition": "The system encountered an error due to the absence of a valid language configuration.",
+        "solution": "Configure the system's default language and region settings correctly. Reinstall any missing language packs."
+    },
+    "FAULTY_HARDWARE_CORRUPTED_PAGE": {
+        "hexcode": "0x00000050",
+        "definition": "Faulty hardware caused page corruption, which may be due to defective RAM or other system components.",
+        "solution": "Test hardware components like RAM for defects, run memory diagnostics, and replace faulty hardware if necessary."
+    },
+    "EXFAT_FILE_SYSTEM": {
+        "hexcode": "0x0000007A",
+        "definition": "An error occurred in the EXFAT file system, typically related to corrupt or damaged file systems.",
+        "solution": "Run a disk check on the affected volume, and repair the file system using appropriate tools."
+    },
+    "VOLSNAP_OVERLAPPED_TABLE_ACCESS": {
+        "hexcode": "0x000000D9",
+        "definition": "An error occurred while accessing the volume snapshot table, potentially due to corruption or conflicts with other processes.",
+        "solution": "Check for disk errors, update storage drivers, and ensure that no processes are interfering with snapshot management."
+    },
+    "INVALID_MDL_RANGE": {
+        "hexcode": "0x000000F4",
+        "definition": "The system attempted to access an invalid memory descriptor list (MDL) range.",
+        "solution": "Check memory allocations, ensure proper range handling in memory management, and update drivers as necessary."
+    },
+    "VHD_BOOT_INITIALIZATION_FAILED": {
+        "hexcode": "0x0000011F",
+        "definition": "The system failed to initialize a Virtual Hard Disk (VHD) during boot.",
+        "solution": "Ensure that the VHD is correctly configured and accessible. Check virtual disk settings and boot configuration."
+    },
+    "DYNAMIC_ADD_PROCESSOR_MISMATCH": {
+        "hexcode": "0x00000123",
+        "definition": "The system encountered an issue when dynamically adding a processor, possibly due to an architecture mismatch.",
+        "solution": "Check CPU compatibility and ensure that all processors are properly supported by the operating system."
+    },
+    "INVALID_EXTENDED_PROCESSOR_STATE": {
+        "hexcode": "0x0000009C",
+        "definition": "The processor entered an invalid extended state, which could be related to misconfigured system settings or hardware failure.",
+        "solution": "Check for CPU or system board issues, and update the BIOS or processor drivers."
+    },
+    "RESOURCE_OWNER_POINTER_INVALID": {
+        "hexcode": "0x000000A4",
+        "definition": "An invalid resource owner pointer was encountered, typically indicating a failure in memory or resource management.",
+        "solution": "Ensure proper memory allocation and resource management, and check for memory leaks or corruption."
+    },
+    "DPC_WATCHDOG_VIOLATION": {
+        "hexcode": "0x00000133",
+        "definition": "A Deferred Procedure Call (DPC) took too long to complete, potentially indicating a driver or hardware failure.",
+        "solution": "Update drivers, particularly for graphics and network devices, and check for hardware failures."
+    },
+    "DRIVE_EXTENDER": {
+        "hexcode": "0x0000007F",
+        "definition": "An issue occurred with the Drive Extender system, which may be related to disk management or drive mirroring.",
+        "solution": "Check for issues with the storage array or RAID configuration. Run disk diagnostics."
+    },
+    "REGISTRY_FILTER_DRIVER_EXCEPTION": {
+        "hexcode": "0x0000009F",
+        "definition": "A registry filter driver caused an exception during execution, potentially due to corruption or a driver conflict.",
+        "solution": "Check for corrupted registry entries and update or reinstall filter drivers as needed."
+    },
+    "VHD_BOOT_HOST_VOLUME_NOT_ENOUGH_SPACE": {
+        "hexcode": "0x00000022",
+        "definition": "The boot process failed due to insufficient space on the host volume for a Virtual Hard Disk.",
+        "solution": "Ensure adequate free space on the host volume. Consider resizing the virtual disk or freeing up space."
+    },
+    "WIN32K_HANDLE_MANAGER": {
+        "hexcode": "0x0000006A",
+        "definition": "An error occurred within the Win32k system's handle manager, potentially causing display or UI issues.",
+        "solution": "Update display drivers and check for conflicts in the Win32k subsystem."
+    },
+    "GPIO_CONTROLLER_DRIVER_ERROR": {
+        "hexcode": "0x00000122",
+        "definition": "An error was encountered with the GPIO controller driver, typically indicating hardware or driver issues.",
+        "solution": "Update the GPIO controller driver, check for hardware malfunctions, and verify proper pin configurations."
+    },
+    "KERNEL_SECURITY_CHECK_FAILURE": {
+        "hexcode": "0x00000133",
+        "definition": "This error occurs when the kernel detects a security integrity violation, such as corruption in memory or invalid system state.",
+        "solution": "Run a system file checker (sfc /scannow), update all drivers, and check for malware that may have compromised system security."
+    },
+    "KERNEL_MODE_HEAP_CORRUPTION": {
+        "hexcode": "0x00000134",
+        "definition": "The kernel detected heap corruption in kernel mode, which may lead to instability or crashes.",
+        "solution": "Update the device drivers and ensure that memory allocation functions are correctly implemented. Run memory diagnostics."
+    },
+    "PASSIVE_INTERRUPT_ERROR": {
+        "hexcode": "0x00000135",
+        "definition": "This error is caused by improper handling of interrupt routines, typically when interrupts occur during a passive level of the processor.",
+        "solution": "Check for hardware driver issues and update or reinstall any drivers related to interrupt management."
+    },
+    "INVALID_IO_BOOST_STATE": {
+        "hexcode": "0x00000136",
+        "definition": "An invalid state was detected when boosting I/O operations, which can affect system performance and stability.",
+        "solution": "Verify power management settings and update drivers related to input/output (I/O) operations."
+    },
+    "CRITICAL_INITIALIZATION_FAILURE": {
+        "hexcode": "0x00000137",
+        "definition": "A critical system component failed to initialize, likely during boot or system startup.",
+        "solution": "Check for corrupted system files, run startup repair, and reinstall critical system drivers."
+    },
+    "STORAGE_DEVICE_ABNORMALITY_DETECTED": {
+        "hexcode": "0x00000138",
+        "definition": "The system detected an issue with a storage device, such as a hard drive or SSD, which may indicate hardware failure.",
+        "solution": "Run a disk check (chkdsk), test the storage device with manufacturer tools, and replace the device if necessary."
+    },
+    "PROCESSOR_DRIVER_INTERNAL": {
+        "hexcode": "0x00000139",
+        "definition": "An internal error occurred within the processor driver, which may cause system instability or crashes.",
+        "solution": "Update the processor driver and BIOS/UEFI firmware. Check for hardware compatibility issues."
+    },
+    "BUGCODE_USB3_DRIVER": {
+        "hexcode": "0x0000013A",
+        "definition": "An issue was detected with the USB 3.0 driver, which could cause system crashes or failures when interacting with USB devices.",
+        "solution": "Update USB drivers and firmware. Disconnect and reconnect USB devices, and check for hardware issues."
+    },
+    "SECURE_BOOT_VIOLATION": {
+        "hexcode": "0x0000013B",
+        "definition": "A secure boot violation occurred, which may happen if the system attempts to boot using unsigned or corrupted boot files.",
+        "solution": "Ensure that Secure Boot is properly configured in the BIOS/UEFI. Restore or replace any corrupt boot files."
+    },
+    "ABNORMAL_RESET_DETECTED": {
+        "hexcode": "0x0000013C",
+        "definition": "The system detected an abnormal reset, which could be caused by hardware issues, overclocking, or power fluctuations.",
+        "solution": "Check the system's power supply and hardware components. Revert any overclocking settings and test with default configurations."
+    },
+    "REFS_FILE_SYSTEM": {
+        "hexcode": "0x0000013D",
+        "definition": "The ReFS (Resilient File System) encountered an issue, which may lead to data corruption or an inability to read/write files.",
+        "solution": "Check for disk errors, ensure the ReFS driver is up to date, and run file system checks to repair any corruption."
+    },
+    "KERNEL_WMI_INTERNAL": {
+        "hexcode": "0x0000013E",
+        "definition": "A problem occurred with the Windows Management Instrumentation (WMI), possibly due to driver or system misconfigurations.",
+        "solution": "Update or repair the WMI components and related drivers. Run WMI diagnostic tools to resolve issues."
+    },
+    "SOC_SUBSYSTEM_FAILURE": {
+        "hexcode": "0x0000013F",
+        "definition": "A failure occurred in the System on Chip (SOC) subsystem, which could affect the overall performance of embedded systems or devices.",
+        "solution": "Check for hardware compatibility and update the firmware for the SOC. Test the system in a different environment if possible."
+    },
+    "FATAL_ABNORMAL_RESET_ERROR": {
+        "hexcode": "0x00000140",
+        "definition": "A fatal error occurred due to an abnormal reset, indicating a severe hardware failure or critical system problem.",
+        "solution": "Inspect hardware components for failure. Perform diagnostics on the CPU, motherboard, and power supply."
+    },
+    "EXCEPTION_SCOPE_INVALID": {
+        "hexcode": "0x00000141",
+        "definition": "The system detected an invalid exception scope, indicating that an exception was thrown outside the valid range of execution.",
+        "solution": "Debug the system code to identify improper exception handling. Ensure all exception scopes are defined correctly."
+    },
+    "SOC_CRITICAL_DEVICE_REMOVED": {
+        "hexcode": "0x00000142",
+        "definition": "A critical device connected to the System on Chip (SOC) was removed, leading to a system crash or loss of functionality.",
+        "solution": "Check for loose or disconnected hardware components. Replace or reseat any critical devices connected to the SOC."
+    },
+    "PDC_WATCHDOG_TIMEOUT": {
+        "hexcode": "0x00000143",
+        "definition": "A timeout occurred in the Processor Device Controller (PDC), which could indicate an issue with processor power management or communication.",
+        "solution": "Update processor and chipset drivers. Check for power management issues or conflicts."
+    },
+    "TCPIP_AOAC_NIC_ACTIVE_REFERENCE_LEAK": {
+        "hexcode": "0x00000144",
+        "definition": "A memory leak was detected in the TCP/IP stack, related to the Always-On, Always-Connected (AOAC) network interface controller (NIC).",
+        "solution": "Update network drivers and troubleshoot any application that might be causing improper resource handling in the NIC."
+    },
+    "UNSUPPORTED_INSTRUCTION_MODE": {
+        "hexcode": "0x00000145",
+        "definition": "The system attempted to run an unsupported instruction mode, potentially due to incompatible hardware or software.",
+        "solution": "Verify hardware compatibility and ensure the correct processor instruction set is being used by the operating system."
+    },
+    "INVALID_PUSH_LOCK_FLAGS": {
+        "hexcode": "0x00000146",
+        "definition": "Invalid flags were used with a push lock operation, which could indicate a synchronization issue in multi-threaded applications.",
+        "solution": "Check synchronization code and ensure proper flags are being used with push locks."
+    },
+    "KERNEL_LOCK_ENTRY_LEAKED_ON_THREAD_TERMINATION": {
+        "hexcode": "0x00000147",
+        "definition": "A lock entry was not released when a thread terminated, causing a resource leak in kernel mode.",
+        "solution": "Ensure that all kernel-level resources are released properly when threads terminate."
+    },
+    "UNEXPECTED_STORE_EXCEPTION": {
+        "hexcode": "0x00000148",
+        "definition": "An unexpected exception occurred while handling a store operation, possibly related to memory or data storage issues.",
+        "solution": "Run memory diagnostics and check disk health. Update storage drivers to fix potential compatibility issues."
+    },
+    "OS_DATA_TAMPERING": {
+        "hexcode": "0x00000149",
+        "definition": "The operating system detected data tampering, which may be the result of malicious activity or file corruption.",
+        "solution": "Run a full system scan for malware and verify the integrity of system files. Apply security patches and updates."
+    },
+    "KERNEL_THREAD_PRIORITY_FLOOR_VIOLATION": {
+        "hexcode": "0x0000014A",
+        "definition": "A violation occurred in kernel thread priority management, causing improper scheduling of threads.",
+        "solution": "Check and adjust the thread priority management settings. Ensure that critical threads are scheduled properly in the kernel."
+    },
+    "ILLEGAL_IOMMU_PAGE_FAULT": {
+        "hexcode": "0x0000014B",
+        "definition": "An illegal page fault occurred in the I/O Memory Management Unit (IOMMU), which could lead to data corruption or system crashes.",
+        "solution": "Update chipset and storage drivers. Test the memory for defects and verify IOMMU settings in the BIOS/UEFI."
+    },
+    "HAL_ILLEGAL_IOMMU_PAGE_FAULT": {
+        "hexcode": "0x0000014C",
+        "definition": "A hardware abstraction layer (HAL) detected an illegal page fault in the IOMMU, typically caused by hardware issues.",
+        "solution": "Update system firmware and drivers. Run hardware diagnostics on the memory and motherboard."
+    },
+    "SDBUS_INTERNAL_ERROR": {
+        "hexcode": "0x0000014D",
+        "definition": "An internal error was detected in the SD bus driver, possibly due to hardware malfunctions or driver corruption.",
+        "solution": "Update SD card drivers and firmware. Check the SD bus for hardware issues or conflicts."
+    },
+    "WORKER_THREAD_RETURNED_WITH_SYSTEM_PAGE_PRIORITY_ACTIVE": {
+        "hexcode": "0x0000014E",
+        "definition": "A worker thread returned while the system page priority was still active, leading to a potential race condition or memory inconsistency.",
+        "solution": "Review thread scheduling code and ensure that page priority is properly handled before threads are terminated."
+    },
+    "WIN32K_ATOMIC_CHECK_FAILURE": {
+        "hexcode": "0x0000014F",
+        "definition": "An atomic check failure occurred in the Win32k subsystem, which handles user interface and window management.",
+        "solution": "Update or reinstall display drivers and check for software conflicts with the Win32k system components."
+    },
+    "KERNEL_AUTO_BOOST_INVALID_LOCK_RELEASE": {
+        "hexcode": "0x00000150",
+        "definition": "An invalid lock release occurred during the kernel auto-boost process, leading to system instability.",
+        "solution": "Ensure proper lock management in kernel code and check for conflicts in boost or resource allocation mechanisms."
+    },
+    "WORKER_THREAD_TEST_CONDITION": {
+        "hexcode": "0x00000151",
+        "definition": "A worker thread encountered a test condition that led to an unexpected termination or failure.",
+        "solution": "Review thread logic and ensure that all conditions are properly handled in multi-threaded applications."
+    },
+    "WIN32K_CRITICAL_FAILURE": {
+        "hexcode": "0x00000152",
+        "definition": "A critical failure occurred within the Win32k subsystem, which could cause system crashes or UI issues.",
+        "solution": "Check for hardware or driver conflicts, particularly related to graphics or display functionality."
+    },
+    "INVALID_RUNDOWN_PROTECTION_FLAGS": {
+        "hexcode": "0x00000153",
+        "definition": "Invalid flags were used with rundown protection, which manages cleanup of resources in kernel-level threads.",
+        "solution": "Review the code that manages rundown protection and ensure proper flags are used for resource cleanup."
+    },
+    "INVALID_SLOT_ALLOCATOR_FLAGS": {
+        "hexcode": "0x000000F0",
+        "definition": "An error occurred in the slot allocator due to invalid flags, potentially caused by driver or system misconfiguration.",
+        "solution": "Check for updates to device drivers, particularly those that manage memory or resources. Reconfigure the system settings if necessary."
+    },
+    "ERESOURCE_INVALID_RELEASE": {
+        "hexcode": "0x000000F1",
+        "definition": "An error occurred when releasing a resource, indicating that the resource was not properly allocated or managed.",
+        "solution": "Ensure that resources are allocated and released properly in drivers or applications. Debug and update faulty driver code if applicable."
+    },
+    "CLUSTER_CSV_CLUSSVC_DISCONNECT_WATCHDOG": {
+        "hexcode": "0x000000F2",
+        "definition": "The Cluster Shared Volumes (CSV) service failed to connect or communicate, leading to a watchdog timeout.",
+        "solution": "Verify the network and storage configuration for CSV, and check the Cluster service logs for potential connectivity issues. Update any relevant drivers."
+    },
+    "CRYPTO_LIBRARY_INTERNAL_ERROR": {
+        "hexcode": "0x000000F3",
+        "definition": "An internal error occurred in the cryptography library, possibly related to encryption or decryption operations.",
+        "solution": "Check for updates or corruption in system cryptographic libraries. Run a system file check and update security software."
+    },
+    "COREMSGCALL_INTERNAL_ERROR": {
+        "hexcode": "0x000000F4",
+        "definition": "An internal error was detected during a Core Message Call, possibly related to inter-process communication.",
+        "solution": "Ensure that the system message services are working correctly. Update system components responsible for message handling or inter-process communication."
+    },
+    "COREMSG_INTERNAL_ERROR": {
+        "hexcode": "0x000000F5",
+        "definition": "An internal error in the core message system, indicating a failure in system communication or message passing.",
+        "solution": "Diagnose the message handling service. Look for driver or hardware conflicts that may be disrupting system communication."
+    },
+    "ELAM_DRIVER_DETECTED_FATAL_ERROR": {
+        "hexcode": "0x000000F6",
+        "definition": "A fatal error was detected in the Early Launch Anti-malware (ELAM) driver, possibly due to a malware or software conflict.",
+        "solution": "Ensure ELAM and antivirus software are up-to-date. Perform a full system scan to rule out malware interference."
+    },
+    "PROFILER_CONFIGURATION_ILLEGAL": {
+        "hexcode": "0x000000F7",
+        "definition": "The profiler configuration was found to be illegal or invalid, preventing proper performance monitoring.",
+        "solution": "Reconfigure the profiler settings and ensure that performance monitoring tools are compatible with the current system configuration."
+    },
+    "MICROCODE_REVISION_MISMATCH": {
+        "hexcode": "0x000000F8",
+        "definition": "A mismatch was detected between the CPU microcode revision and the system's expectations, often causing instability or crashes.",
+        "solution": "Update the system BIOS/UEFI and CPU microcode. Ensure that the processor is compatible with the system's firmware."
+    },
+    "VIDEO_DWMINIT_TIMEOUT_FALLBACK_BDD": {
+        "hexcode": "0x000000F9",
+        "definition": "A timeout occurred during the DWM (Desktop Window Manager) initialization, often leading to fallback to a lower performance mode.",
+        "solution": "Update the graphics drivers and check for conflicts with system settings. Ensure that system resources are sufficient for graphics operations."
+    },
+    "BAD_OBJECT_HEADER": {
+        "hexcode": "0x000000FA",
+        "definition": "A corruption or invalid data structure was found in an object header, likely caused by faulty memory operations.",
+        "solution": "Run a memory test to check for faulty hardware. Update or reinstall drivers associated with memory management."
+    },
+    "SECURE_KERNEL_ERROR": {
+        "hexcode": "0x000000FB",
+        "definition": "An error occurred in the secure kernel, often related to kernel-level security violations or integrity issues.",
+        "solution": "Check the system logs for security-related events and update security software. Run integrity checks on the kernel files."
+    },
+    "HYPERGUARD_VIOLATION": {
+        "hexcode": "0x000000FC",
+        "definition": "A violation was detected in the Hyperguard feature, often indicating a failure in the security layer that guards the hypervisor.",
+        "solution": "Ensure that virtualization settings are correctly configured in the BIOS/UEFI. Update or reinstall the hypervisor and security software."
+    },
+    "SECURE_FAULT_UNHANDLED": {
+        "hexcode": "0x000000FD",
+        "definition": "A fault occurred in the secure execution environment, and it was not handled properly by the system.",
+        "solution": "Check for compatibility issues with secure boot or secure hardware features. Update firmware and security software."
+    },
+    "KERNEL_PARTITION_REFERENCE_VIOLATION": {
+        "hexcode": "0x000000FE",
+        "definition": "A violation occurred while referencing a partition in kernel mode, likely due to corruption or misconfiguration.",
+        "solution": "Run disk repair utilities and check the integrity of partition tables. Verify that partition references in the kernel code are valid."
+    },
+    "PF_DETECTED_CORRUPTION": {
+        "hexcode": "0x000000FF",
+        "definition": "The system detected corruption in the page frame (PF), which may affect memory or system performance.",
+        "solution": "Run a memory test and check for faulty hardware. Perform a system restore if recent changes led to memory corruption."
+    },
+    "KERNEL_AUTO_BOOST_LOCK_ACQUISITION_WITH_RAISED_IRQL": {
+        "hexcode": "0x00000100",
+        "definition": "The kernel attempted to acquire a lock while the IRQL (Interrupt Request Level) was raised, which is not permitted.",
+        "solution": "Inspect and update driver code to ensure proper locking mechanisms are used at the correct IRQL levels."
+    },
+    "LOADER_ROLLBACK_DETECTED": {
+        "hexcode": "0x00000101",
+        "definition": "A rollback of the boot loader was detected, potentially caused by a failed update or an invalid boot configuration.",
+        "solution": "Check for any recent updates or changes to the bootloader and restore the system to a stable boot configuration."
+    },
+    "WIN32K_SECURITY_FAILURE": {
+        "hexcode": "0x00000102",
+        "definition": "A security failure was detected in the Win32K subsystem, likely caused by malicious software or invalid system operations.",
+        "solution": "Check for malware infections, perform a full system scan, and update security software. Apply any pending Windows updates."
+    },
+    "KERNEL_STORAGE_SLOT_IN_USE": {
+        "hexcode": "0x00000103",
+        "definition": "A kernel storage slot was found to be in use when it was expected to be free, indicating potential resource allocation issues.",
+        "solution": "Ensure that storage resources are correctly allocated and that no conflicts exist between devices or drivers."
+    },
+    "WORKER_THREAD_RETURNED_WHILE_ATTACHED_TO_SILO": {
+        "hexcode": "0x00000104",
+        "definition": "A worker thread returned while it was still attached to a silo, which is a state management issue.",
+        "solution": "Review and update thread management code, especially when dealing with siloed processes or thread pools."
+    },
+    "TTM_FATAL_ERROR": {
+        "hexcode": "0x00000105",
+        "definition": "A fatal error occurred in the TTM (Translation Table Manager), which handles memory management in graphics systems.",
+        "solution": "Update graphics card drivers and check for hardware faults. Ensure that memory resources for graphics are properly managed."
+    },
+    "WIN32K_POWER_WATCHDOG_TIMEOUT": {
+        "hexcode": "0x00000106",
+        "definition": "A power watchdog timer expired in the Win32K subsystem, indicating a timeout or unresponsive state during power operations.",
+        "solution": "Update the display and power management drivers. Check system power settings for conflicts."
+    },
+    "TTM_WATCHDOG_TIMEOUT": {
+        "hexcode": "0x00000107",
+        "definition": "A watchdog timeout occurred in the TTM, potentially caused by resource exhaustion or driver issues.",
+        "solution": "Update graphics drivers, check for hardware issues, and ensure proper resource allocation for graphics operations."
+    },
+    "WIN32K_CALLOUT_WATCHDOG_BUGCHECK": {
+        "hexcode": "0x00000108",
+        "definition": "A bug check was triggered by a watchdog timeout in the Win32K system callout, potentially indicating a resource management issue.",
+        "solution": "Check the event logs for specific errors related to system calls and update related drivers or system components."
+    },
+    "EXCEPTION_ON_INVALID_STACK": {
+        "hexcode": "0x00000109",
+        "definition": "An exception occurred due to an invalid stack pointer, often caused by stack corruption or improper function calls.",
+        "solution": "Run memory diagnostics and update any corrupted or outdated drivers. Ensure proper stack management in system code."
+    },
+    "UNWIND_ON_INVALID_STACK": {
+        "hexcode": "0x0000010A",
+        "definition": "An unwind operation was attempted on an invalid stack, indicating a potential issue with the call stack integrity.",
+        "solution": "Inspect and repair system code to ensure proper stack management during function calls and exceptions."
+    },
+    "FAST_ERESOURCE_PRECONDITION_VIOLATION": {
+        "hexcode": "0x0000010B",
+        "definition": "A precondition violation was detected when handling a fast Eresource, typically due to improper synchronization or resource management.",
+        "solution": "Review and adjust synchronization mechanisms in system or driver code to ensure proper handling of fast resources."
+    },
+    "STORE_DATA_STRUCTURE_CORRUPTION": {
+        "hexcode": "0x0000010C",
+        "definition": "Corruption was detected in a critical data structure related to system storage, often indicating issues with memory or disk management.",
+        "solution": "Check for disk errors, update drivers, and run memory diagnostics to identify and resolve hardware issues."
+    },
+    "MANUALLY_INITIATED_POWER_BUTTON_HOLD": {
+        "hexcode": "0x0000010D",
+        "definition": "A system crash was manually triggered by holding the power button, often for diagnostic or recovery purposes.",
+        "solution": "Review crash logs for diagnostic information and verify if hardware or software was causing the issue before the manual crash."
+    },
+    "SYNTHETIC_WATCHDOG_TIMEOUT": {
+        "hexcode": "0x0000010E",
+        "definition": "A synthetic watchdog timeout was detected, which may be related to virtual environments or test systems.",
+        "solution": "Check for issues with virtualization software or test environments. Ensure that the system's resources are adequate for synthetic testing."
+    },
+    "INVALID_SILO_DETACH": {
+        "hexcode": "0x0000010F",
+        "definition": "An invalid operation occurred when detaching from a silo, which could be due to synchronization issues or resource mismanagement.",
+        "solution": "Update or debug the system code that handles siloed processes and resource management to ensure proper detachment procedures."
+    },
+    "INVALID_CALLBACK_STACK_ADDRESS": {
+        "hexcode": "0x00000110",
+        "definition": "A callback function was called with an invalid stack address, indicating an issue with stack handling or pointer integrity.",
+        "solution": "Inspect the system code for invalid memory access and ensure proper stack management during function callbacks."
+    },
+    "INVALID_KERNEL_STACK_ADDRESS": {
+        "hexcode": "0x00000111",
+        "definition": "An invalid address was encountered in the kernel stack, potentially caused by memory corruption or pointer errors.",
+        "solution": "Run a memory test and update system drivers to ensure proper memory handling and avoid corruption."
+    },
     "HARDWARE_WATCHDOG_TIMEOUT": {
         "hexcode": "0x000001CF",
         "definition": "INVALID_THREAD_ID - An invalid thread ID was used for a certain action.",
         "solution": "This could be caused by a driver issue or software bug. Check for faulty drivers and ensure all critical software components are up-to-date."
     },
-    "CPI_FIRMWARE_WATCHDOG_TIMEOUT": {},
-    "WORKER_THREAD_INVALID_STATE": {},
-    "WFP_INVALID_OPERATION": {},
-    "DRIVER_PNP_WATCHDOG": {},
-    "WORKER_THREAD_RETURNED_WITH_NON_DEFAULT_WORKLOAD_CLASS": {},
-    "EFS_FATAL_ERROR": {},
-    "UCMUCSI_FAILURE": {},
-    "HAL_IOMMU_INTERNAL_ERROR": {},
-    "HAL_BLOCKED_PROCESSOR_INTERNAL_ERROR": {},
-    "IPI_WATCHDOG_TIMEOUT": {},
-    "DMA_COMMON_BUFFER_VECTOR_ERROR": {},
-    "BUGCODE_MBBADAPTER_DRIVER": {},
-    "BUGCODE_WIFIADAPTER_DRIVER": {},
-    "PROCESSOR_START_TIMEOUT": {},
-    "VIDEO_DXGKRNL_SYSMM_FATAL_ERROR": {},
-    "ILLEGAL_ATS_INITIALIZATION": {},
-    "SECURE_PCI_CONFIG_SPACE_ACCESS_VIOLATION": {},
-    "DAM_WATCHDOG_TIMEOUT": {},
-    "HANDLE_ERROR_ON_CRITICAL_THREAD": {},
-    "XBOX_ERACTRL_CS_TIMEOUT": {},
-    "BC_BLUETOOTH_VERIFIER_FAULT": {},
-    "BC_BTHMINI_VERIFIER_FAULT": {},
-    "HYPERVISOR_ERROR": {},
-    "SYSTEM_THREAD_EXCEPTION_NOT_HANDLED_M": {},
-    "UNEXPECTED_KERNEL_MODE_TRAP_M": {},
-    "KERNEL_MODE_EXCEPTION_NOT_HANDLED_M": {},
-    "THREAD_STUCK_IN_DEVICE_DRIVER_M": {},
-    "THREAD_TERMINATE_HELD_MUTEX": {},
-    "STATUS_CANNOT_LOAD_REGISTRY_FILE": {},
-    "WINLOGON_FATAL_ERROR": {},
-    "STATUS_IMAGE_CHECKSUM_MISMATCH": {},
-    "MANUALLY_INITIATED_CRASH1": {}
+    "CPI_FIRMWARE_WATCHDOG_TIMEOUT": {
+        "hexcode": "0x000000F1",
+        "definition": "A firmware watchdog timer expired due to a timeout in the CPI firmware, typically caused by hardware or firmware issues.",
+        "solution": "Update the system firmware (BIOS/UEFI) and ensure compatibility with the hardware components. If the issue persists, check for hardware failures."
+    },
+    "WORKER_THREAD_INVALID_STATE": {
+        "hexcode": "0x000000F2",
+        "definition": "A worker thread entered an invalid state, possibly due to an error in the thread management process.",
+        "solution": "Use debugging tools to analyze the thread management code in drivers and applications. Update or replace the faulty driver."
+    },
+    "WFP_INVALID_OPERATION": {
+        "hexcode": "0x000000F3",
+        "definition": "An invalid operation was detected in the Windows Filtering Platform (WFP), which could cause network and security issues.",
+        "solution": "Check for conflicts in network filtering or security software. Update or reinstall network drivers and security programs."
+    },
+    "DRIVER_PNP_WATCHDOG": {
+        "hexcode": "0x000000F4",
+        "definition": "A PnP watchdog timer expired, indicating that a device driver failed to respond in a timely manner.",
+        "solution": "Update device drivers, particularly for recently installed or updated hardware. Check for resource conflicts or hardware issues."
+    },
+    "WORKER_THREAD_RETURNED_WITH_NON_DEFAULT_WORKLOAD_CLASS": {
+        "hexcode": "0x000000F5",
+        "definition": "A worker thread returned with a non-default workload class, indicating a potential issue with thread management.",
+        "solution": "Inspect the thread management and scheduling code in drivers. Update the drivers or system software that manages worker threads."
+    },
+    "EFS_FATAL_ERROR": {
+        "hexcode": "0x000000F6",
+        "definition": "A fatal error occurred within the Encrypting File System (EFS), potentially causing data corruption or access issues.",
+        "solution": "Verify the integrity of EFS files and perform a system restore to a point before the issue. Update system and EFS drivers."
+    },
+    "UCMUCSI_FAILURE": {
+        "hexcode": "0x000000F7",
+        "definition": "A failure occurred in the USB Type-C/UCSI driver, often related to hardware initialization or communication issues.",
+        "solution": "Update the USB drivers, including UCSI and chipset drivers. Check for hardware compatibility issues and reseat or replace hardware if needed."
+    },
+    "HAL_IOMMU_INTERNAL_ERROR": {
+        "hexcode": "0x000000F8",
+        "definition": "A hardware abstraction layer (HAL) internal error occurred, possibly due to IOMMU configuration or memory mapping issues.",
+        "solution": "Update the motherboard firmware (BIOS/UEFI), chipset drivers, and verify the system configuration related to memory management and IOMMU."
+    },
+    "HAL_BLOCKED_PROCESSOR_INTERNAL_ERROR": {
+        "hexcode": "0x000000F9",
+        "definition": "A processor internal error occurred, potentially caused by hardware issues or improper processor configuration.",
+        "solution": "Check the processor configuration in the BIOS/UEFI settings and ensure it is up-to-date. Test the processor for hardware failure."
+    },
+    "IPI_WATCHDOG_TIMEOUT": {
+        "hexcode": "0x000000FA",
+        "definition": "An Inter-Processor Interrupt (IPI) watchdog timer expired due to delayed processor communication.",
+        "solution": "Update the processor drivers and firmware. Check for issues with multi-core processor configurations or BIOS settings."
+    },
+    "DMA_COMMON_BUFFER_VECTOR_ERROR": {
+        "hexcode": "0x000000FB",
+        "definition": "A Direct Memory Access (DMA) error occurred, causing issues with buffer vector allocation.",
+        "solution": "Check for hardware conflicts or driver issues related to DMA operations. Update DMA-related drivers and ensure hardware compatibility."
+    },
+    "BUGCODE_MBBADAPTER_DRIVER": {
+        "hexcode": "0x000000FC",
+        "definition": "A driver for a mobile broadband adapter caused a system crash, typically due to a bad driver or firmware.",
+        "solution": "Update or reinstall the mobile broadband adapter driver. If the issue persists, check for firmware updates from the device manufacturer."
+    },
+    "BUGCODE_WIFIADAPTER_DRIVER": {
+        "hexcode": "0x000000FD",
+        "definition": "A driver for a Wi-Fi adapter caused a system crash, likely due to a bug in the driver or firmware.",
+        "solution": "Update or reinstall the Wi-Fi adapter driver. Check for compatibility with the operating system and update the driver if necessary."
+    },
+    "PROCESSOR_START_TIMEOUT": {
+        "hexcode": "0x000000FE",
+        "definition": "The processor failed to initialize or start within the expected time frame.",
+        "solution": "Ensure that the processor is properly seated and check the BIOS/UEFI settings. Update the processor firmware if necessary."
+    },
+    "VIDEO_DXGKRNL_SYSMM_FATAL_ERROR": {
+        "hexcode": "0x000000FF",
+        "definition": "A fatal error occurred in the DirectX graphics kernel, causing a system crash related to video memory management.",
+        "solution": "Update graphics drivers, DirectX, and related system components. If the issue persists, check for hardware faults in the graphics card."
+    },
+    "ILLEGAL_ATS_INITIALIZATION": {
+        "hexcode": "0x00000100",
+        "definition": "An illegal address translation services (ATS) initialization error occurred, often related to I/O operations or memory management.",
+        "solution": "Update the system firmware and ensure that the I/O subsystem is correctly configured. Test for hardware failure related to memory or I/O components."
+    },
+    "SECURE_PCI_CONFIG_SPACE_ACCESS_VIOLATION": {
+        "hexcode": "0x00000101",
+        "definition": "A violation occurred when accessing a secure PCI configuration space, possibly due to an insecure or misconfigured device.",
+        "solution": "Check for conflicts with PCI devices or security configurations. Update or reinstall PCI device drivers."
+    },
+    "DAM_WATCHDOG_TIMEOUT": {
+        "hexcode": "0x00000102",
+        "definition": "A timeout occurred in the Device Assignment Manager (DAM), possibly due to issues with virtualized devices or device assignment.",
+        "solution": "Ensure that the virtualized environment and device assignment are configured correctly. Update virtualization and device drivers."
+    },
+    "HANDLE_ERROR_ON_CRITICAL_THREAD": {
+        "hexcode": "0x00000103",
+        "definition": "A critical thread encountered an error while handling a critical resource, which can destabilize the system.",
+        "solution": "Check the system event logs for issues related to resource management and update critical drivers that manage system resources."
+    },
+    "XBOX_ERACTRL_CS_TIMEOUT": {
+        "hexcode": "0x00000104",
+        "definition": "A timeout occurred while accessing the Xbox ERA Control Services, typically related to the Xbox subsystem or associated drivers.",
+        "solution": "Update Xbox-related drivers and software. Check for issues with Xbox Live services or device connectivity."
+    },
+    "BC_BLUETOOTH_VERIFIER_FAULT": {
+        "hexcode": "0x00000105",
+        "definition": "A fault was detected by the Bluetooth verifier, often caused by faulty Bluetooth drivers or device conflicts.",
+        "solution": "Update Bluetooth drivers and test for hardware issues with Bluetooth devices. Run the system with Bluetooth verifier disabled if needed."
+    },
+    "BC_BTHMINI_VERIFIER_FAULT": {
+        "hexcode": "0x00000106",
+        "definition": "A fault was detected in the Bluetooth Miniport driver during verification.",
+        "solution": "Update the Bluetooth Miniport driver, or uninstall and reinstall the Bluetooth software stack."
+    },
+    "HYPERVISOR_ERROR": {
+        "hexcode": "0x00000107",
+        "definition": "A hypervisor error occurred, typically related to virtualization or virtual machine management.",
+        "solution": "Check for updates for the hypervisor software, review system settings for virtualization, and ensure compatibility with the hardware."
+    },
+    "SYSTEM_THREAD_EXCEPTION_NOT_HANDLED_M": {
+        "hexcode": "0x00000108",
+        "definition": "A system thread exception occurred but was not handled properly, possibly due to driver issues or invalid system operations.",
+        "solution": "Use debugging tools to identify the specific thread or driver causing the issue. Update or reinstall system drivers."
+    },
+    "UNEXPECTED_KERNEL_MODE_TRAP_M": {
+        "hexcode": "0x00000109",
+        "definition": "An unexpected trap occurred in kernel mode, typically due to faulty drivers or hardware.",
+        "solution": "Check for recently installed hardware or software and remove or update them. Run hardware diagnostics for potential issues."
+    },
+    "KERNEL_MODE_EXCEPTION_NOT_HANDLED_M": {
+        "hexcode": "0x0000010A",
+        "definition": "A kernel mode exception occurred that was not properly handled, often due to software bugs or hardware failure.",
+        "solution": "Check the system logs for detailed error messages and update any outdated drivers. Run hardware diagnostics for stability."
+    },
+    "THREAD_STUCK_IN_DEVICE_DRIVER_M": {
+        "hexcode": "0x0000010B",
+        "definition": "A thread was stuck while attempting to communicate with a device driver, usually due to driver issues or resource exhaustion.",
+        "solution": "Update or reinstall the device drivers. Run system diagnostics to identify faulty hardware."
+    },
+    "THREAD_TERMINATE_HELD_MUTEX": {
+        "hexcode": "0x0000010C",
+        "definition": "A thread failed to terminate properly while holding a mutex, possibly due to a deadlock or timing issue.",
+        "solution": "Analyze the code or drivers managing the mutex. Update the drivers or system software to ensure proper mutex handling."
+    },
+    "STATUS_CANNOT_LOAD_REGISTRY_FILE": {
+        "hexcode": "0x0000010D",
+        "definition": "The system was unable to load a critical registry file, often due to file corruption or system misconfiguration.",
+        "solution": "Restore the registry from a backup or use the System Restore feature to revert to a previous configuration."
+    },
+    "WINLOGON_FATAL_ERROR": {
+        "hexcode": "0x0000010E",
+        "definition": "A fatal error occurred within the Winlogon process, causing login or authentication failure.",
+        "solution": "Check for issues with user profiles, system security settings, or recent updates that may have corrupted the login process."
+    },
+    "STATUS_IMAGE_CHECKSUM_MISMATCH": {
+        "hexcode": "0x0000010F",
+        "definition": "The checksum of an image file did not match the expected value, indicating possible corruption.",
+        "solution": "Reinstall or restore the affected application or system files from a backup or installation media."
+    },
+    "MANUALLY_INITIATED_CRASH1": {
+        "hexcode": "0x00000110",
+        "definition": "A manually initiated crash was triggered for diagnostic purposes.",
+        "solution": "Review the crash logs to identify the cause of the manual crash and analyze the system state."
+    }
 }
