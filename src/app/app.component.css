@@ -1,0 +1,45 @@
+.main {
+    width: 100%;
+    height: 100%;
+    background-color: #FF5500;
+    text-align: center;
+}
+
+.content {
+    display: flex;
+    position: relative;
+    text-align: center;
+    height: 100%;
+    flex-direction: column;
+}
+
+title {
+    display: flex;
+    position: relative;
+    text-align: center;
+    color: black;
+    font-size: 5rem;
+    padding-top: 5rem;
+    /*top right bottom left*/
+    margin: 5rem auto 0rem auto;
+}
+
+.mainSearchBar {
+    display: flex;
+    position: relative;
+    margin: 5rem auto 0rem auto;
+    width: 60%;
+    height: 3rem;
+    border-radius: 4px;
+}
+
+table {
+    width: 100%;
+    text-align: left;
+    table-layout: auto;
+    margin-top: 4rem;
+}
+
+td {
+    padding: 1rem 0 1rem 0;
+}
