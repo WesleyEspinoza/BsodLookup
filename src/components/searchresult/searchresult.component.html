@@ -1,0 +1,30 @@
+<main class="main">
+    <div class="content">
+        <form>
+            <input class="mainSearchBar" type="search" placeholder="Search for error code eg. PAGE_FAULT_IN_NONPAGED_AREA">
+          </form>
+      
+          <table>
+            <thead>
+              <tr>
+                <th>Stop codes </th>
+                <!-- Add more columns as needed -->
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor=" let item of bsodData.bsodCodes">
+                <td>
+                  <button class="solutionButton">
+                    {{ item.hexcode }} <br> {{ item.stopCode }} <br> {{ item.definition}}
+                  </button>
+                </td>
+                <!-- <button class="solutionButton">Possible Soulitions</button> -->
+                <!-- Add more columns as needed -->
+              </tr>
+            </tbody>
+          </table>
+    </div>
+</main>
+
+
+<router-outlet />

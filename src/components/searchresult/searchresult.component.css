@@ -1,0 +1,31 @@
+.mainSearchBar {
+    display: flex;
+    position: relative;
+    margin: 5rem auto 0rem auto;
+    width: 60%;
+    height: 3rem;
+    border-radius: 4px;
+}
+
+table {
+    width: 100%;
+    text-align: left;
+    table-layout: auto;
+    margin-top: 4rem;
+}
+
+td {
+    padding: 1rem 0 1rem 0;
+    text-align: center;
+}
+
+.solutionButton {
+    background-color: transparent;
+    color: white;
+    text-align: center;
+    border-width: 0;
+}
+
+.solutionButton:hover {
+    cursor: pointer;
+}
