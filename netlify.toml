@@ -1,6 +1,6 @@
 [build]
-  publish = "dist/anglify"
-  command = "ng build --prod"
+  publish = "dist/bsod-lookup/browser"
+  command = "ng build"
 [[redirects]]
   from = "/*"
   to = "/index.html"
