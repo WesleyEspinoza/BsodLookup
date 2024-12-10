@@ -1,0 +1,72 @@
+{
+    "Windows": {
+        "DiskCleanup": {
+            "command": "cleanmgr",
+            "description": "Opens the Disk Cleanup utility to clean temporary files, system files, and more."
+        },
+        "SystemFileChecker": {
+            "command": "sfc /scannow",
+            "description": "Scans and repairs system files to fix corrupted files."
+        },
+        "CheckDiskErrors": {
+            "command": "chkdsk C: /f",
+            "description": "Checks and repairs disk errors on the C: drive."
+        },
+        "DefragmentDisk": {
+            "command": "defrag C: /O",
+            "description": "Optimizes the performance of the hard drive by defragmenting it."
+        },
+        "DisableStartupPrograms": {
+            "command": "Get-ItemProperty HKCU:\\Software\\Microsoft\\Windows\\CurrentVersion\\Run | Select-Object Name,Value",
+            "description": "Displays the list of startup programs to identify and disable unnecessary ones."
+        }
+    },
+    "macOS": {
+        "ClearSystemCache": {
+            "command": "sudo rm -rf /Library/Caches/* && sudo rm -rf ~/Library/Caches/*",
+            "description": "Clears system and user cache files to free up space."
+        },
+        "ReindexSpotlight": {
+            "command": "sudo mdutil -E /",
+            "description": "Reindexes Spotlight to improve search speed and accuracy."
+        },
+        "VerifyDisk": {
+            "command": "diskutil verifyVolume /",
+            "description": "Verifies the integrity of the disk and repairs any errors."
+        },
+        "FreeUpStorage": {
+            "command": "sudo rm -rf /private/var/log/* && sudo rm -rf /Library/Logs/*",
+            "description": "Removes old log files to free up disk space."
+        },
+        "ResetSMC": {
+            "command": "For Intel Macs: Hold Shift + Control + Option + power button for 10 seconds. For M1 Macs: Shut down and restart the Mac.",
+            "description": "Resets the System Management Controller (SMC) to improve system performance."
+        }
+    },
+    "Linux": {
+        "UpdateSystemPackages": {
+            "command": "sudo apt update && sudo apt upgrade -y",
+            "description": "Updates system packages to the latest versions (for Debian-based systems)."
+        },
+        "CleanPackageCache": {
+            "command": "sudo apt clean",
+            "description": "Cleans the package cache to free up space (for Debian-based systems)."
+        },
+        "RemoveUnusedPackages": {
+            "command": "sudo apt autoremove -y && sudo apt autoclean -y",
+            "description": "Removes unnecessary packages and cleans up the system (for Debian-based systems)."
+        },
+        "FreeUpMemory": {
+            "command": "sudo sync && sudo echo 3 > /proc/sys/vm/drop_caches",
+            "description": "Frees up memory by clearing cached data."
+        },
+        "DefragmentDisk": {
+            "command": "sudo e4defrag /dev/sda1",
+            "description": "Defragments the disk (for ext4 file systems, only necessary for HDDs)."
+        },
+        "CheckDiskUsage": {
+            "command": "df -h",
+            "description": "Displays the disk usage and available space across mounted file systems."
+        }
+    }
+}

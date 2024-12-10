@@ -1,0 +1,70 @@
+{
+    "ASRock": {
+        "BIOS Key": "F2",
+        "Boot Key": "F11"
+    },
+    "ASUS": {
+        "BIOS Key": "Del",
+        "Boot Key": "F8"
+    },
+    "Gigabyte": {
+        "BIOS Key": "Del",
+        "Boot Key": "F12"
+    },
+    "MSI": {
+        "BIOS Key": "Del",
+        "Boot Key": "F11"
+    },
+    "Intel": {
+        "BIOS Key": "F2",
+        "Boot Key": "F10"
+    },
+    "Biostar": {
+        "BIOS Key": "Del",
+        "Boot Key": "F9"
+    },
+    "EVGA": {
+        "BIOS Key": "Del",
+        "Boot Key": "F11"
+    },
+    "Supermicro": {
+        "BIOS Key": "Del",
+        "Boot Key": "F11"
+    },
+    "Zotac": {
+        "BIOS Key": "Del",
+        "Boot Key": "F11"
+    },
+    "MSI (Uefi-based)": {
+        "BIOS Key": "Del",
+        "Boot Key": "F11"
+    },
+    "Fujitsu": {
+        "BIOS Key": "F2",
+        "Boot Key": "F12"
+    },
+    "Tyan": {
+        "BIOS Key": "Del",
+        "Boot Key": "F11"
+    },
+    "Lenovo": {
+        "BIOS Key": "F1",
+        "Boot Key": "F12"
+    },
+    "Hewlett-Packard (HP)": {
+        "BIOS Key": "Esc",
+        "Boot Key": "F9"
+    },
+    "Acer": {
+        "BIOS Key": "Del",
+        "Boot Key": "F12"
+    },
+    "Dell": {
+        "BIOS Key": "F2",
+        "Boot Key": "F12"
+    },
+    "Samsung": {
+        "BIOS Key": "F2",
+        "Boot Key": "F12"
+    }
+}

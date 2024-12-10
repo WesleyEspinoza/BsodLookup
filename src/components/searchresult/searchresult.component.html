@@ -1,19 +1,16 @@
 <main class="main">
-    <div class="content">
-          <mat-form-field class="matFormField">
-            <mat-label class="matLabel">APC_INDEX_MISMATCH eg.</mat-label>
-            <input class="toolbarSearch" type="text" 
-                   matInput 
-                   [formControl]="mainSearchBar"
-                   [matAutocomplete]="auto">
-            <mat-autocomplete #auto="matAutocomplete" (optionSelected)="onOptionSelected($event)">
-              <mat-option *ngFor="let option of filteredOptions | async" [value]="option.stopCode">
-                {{ option.stopCode }}
-              </mat-option>
-            </mat-autocomplete>
-          </mat-form-field>
-          <solution-page [bsodInfo]=currentSelection />
-    </div>
+  <div class="content">
+    <mat-form-field class="matFormField">
+      <mat-label class="matLabel">APC_INDEX_MISMATCH eg.</mat-label>
+      <input class="toolbarSearch" type="text" matInput [formControl]="mainSearchBar" [matAutocomplete]="auto">
+      <mat-autocomplete #auto="matAutocomplete" (optionSelected)="onOptionSelected($event)">
+        <mat-option *ngFor="let option of filteredOptions | async" [value]="option.stopCode">
+          {{ option.stopCode }}
+        </mat-option>
+      </mat-autocomplete>
+    </mat-form-field>
+    <solution-page [bsodInfo]=currentSelection />
+  </div>
 </main>
 
 
