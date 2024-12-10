@@ -1,7 +1,7 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { CommonModule } from '@angular/common'
-
+import { bsodType } from "../searchresult/searchresult.component"
 
 @Component({
   selector: 'solution-page',
@@ -10,13 +10,12 @@ import { CommonModule } from '@angular/common'
   styleUrl: './solution.component.css'
 })
 
-export class AppComponent {
-  public keepOriginalOrder = (a: any, b: any) => a.key;
-  public bsodData: any = { bsodCodes: [] }
+export class SolutionPage {
+  @Input() bsodInfo: bsodType = {stopCode: "", hexcode: "", definition: "", solution: ""}
 
   ngOnInit() {
 
   }
-  
+
   title = 'bsodSolution';
 }
