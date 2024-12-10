@@ -1,5 +1,6 @@
 .mainSearchBar {
     width: 100%;
+    font-family: 'Accuratist';
 }
 
 table {
@@ -7,6 +8,7 @@ table {
     text-align: left;
     table-layout: auto;
     margin-top: 4rem;
+    font-family: 'Accuratist';
 }
 
 td {
@@ -19,6 +21,7 @@ td {
     color: white;
     text-align: center;
     border-width: 0;
+    font-family: 'Accuratist';
 }
 
 .solutionButton:hover {
@@ -27,9 +30,11 @@ td {
 
 .toolbarSearch {
     width: 80%;
+    font-family: 'Accuratist';
 }
 
 .matFormField {
     width: 80%;
     margin-top: 4rem;
+    font-family: 'Accuratist';
 }
