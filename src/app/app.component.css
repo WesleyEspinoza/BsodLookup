@@ -14,6 +14,7 @@
     display: flex;
     position: relative;
     text-align: center;
+    width: 100%;
     height: fit-content;
     flex-direction: column;
     font-family: 'Accuratist';
@@ -28,7 +29,7 @@ title {
     font-size: 5rem;
     padding-top: 5rem;
     /*top right bottom left*/
-    margin: 5rem auto 2rem auto;
+    margin: 4rem auto 4rem auto;
 }
 
 h2 {
@@ -64,10 +65,10 @@ h2 {
 
 .osSelectionDropdown {
     display: flex;
-    position: absolute;
-    width: 5rem;
+    position: relative;
+    width: fit-content;
     margin-left: 10%;
-    top: 18%;
+    bottom: 0.5rem;
 }
 
 

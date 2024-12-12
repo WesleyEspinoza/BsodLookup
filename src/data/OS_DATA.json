@@ -16,9 +16,9 @@
             "command": "defrag C: /O",
             "description": "Optimizes the performance of the hard drive by defragmenting it."
         },
-        "DisableStartupPrograms": {
-            "command": "Get-ItemProperty HKCU:\\Software\\Microsoft\\Windows\\CurrentVersion\\Run | Select-Object Name,Value",
-            "description": "Displays the list of startup programs to identify and disable unnecessary ones."
+        "DISM": {
+            "command": "DISM /Online /Cleanup-Image /RestoreHealth",
+            "description": "Use this to repair a corrupted system image."
         }
     },
     "macOS": {
