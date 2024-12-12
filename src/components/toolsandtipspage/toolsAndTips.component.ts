@@ -2,8 +2,8 @@ import { Component, Input } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { CommonModule } from '@angular/common';
 import osjsonData from "../../data/OS_DATA.json";
-import motherboardjsonData from "../../data/OS_DATA.json";
-import macjsonData from "../../data/OS_DATA.json";
+import motherboardjsonData from "../../data/MOTHERBOARD_DATA.json";
+import macjsonData from "../../data/MAC_DATA.json";
 
 
 interface OSData {
@@ -43,30 +43,28 @@ export class ToolsAndTipsPage {
 
   populateStartUpKeys(destination: OSData) {
     switch (destination.osName) {
-      case "Windows":
-        for (var brand in motherboardjsonData) {
-          if (motherboardjsonData.hasOwnProperty(brand)) {
-            const newStartUp: StartUp = { brand: "", keys: [] }
-
-            newStartUp.brand = brand
-            const skeys = motherboardjsonData[brand as keyof typeof motherboardjsonData];
-            for (var key in skeys) {
-              if (skeys.hasOwnProperty(key)) {
-                const newStartUpkey: StartUpkey = { description: "", key: "" }
-                newStartUpkey.description = key
-                newStartUpkey.key = skeys[key as keyof typeof skeys]
-                newStartUp.keys.push(newStartUpkey)
-              }
-            }
-            destination.startUpKeys.push(newStartUp)
-          }
-        }
-
-        break;
       case "macOS":
 
+        for (var model in macjsonData) {
+          if (macjsonData.hasOwnProperty(model)) {
+            const newStartUp: StartUp = { brand: "", keys: [] }
+
+            newStartUp.brand = model
+            const skeys = macjsonData[model as keyof typeof macjsonData];
+            for (var key in skeys) {
+              if (skeys.hasOwnProperty(key)) {
+                const newStartUpkey: StartUpkey = { description: "", key: "" }
+                newStartUpkey.key = key
+                newStartUpkey.description = skeys[key as keyof typeof skeys]
+                newStartUp.keys.push(newStartUpkey)
+              }
+            }
+            destination.startUpKeys.push(newStartUp)
+          }
+        }
+
         break;
-      case "Linux":
+      default:
         for (var brand in motherboardjsonData) {
           if (motherboardjsonData.hasOwnProperty(brand)) {
             const newStartUp: StartUp = { brand: "", keys: [] }
@@ -84,9 +82,6 @@ export class ToolsAndTipsPage {
             destination.startUpKeys.push(newStartUp)
           }
         }
-        break;
-
-      default:
         break;
     }
   }
@@ -109,11 +104,11 @@ export class ToolsAndTipsPage {
           newCommand.description = val["description"]
           newOS.commands.push(newCommand)
         }
-        this.populateStartUpKeys(newOS)
       }
+      this.populateStartUpKeys(newOS)
     }
     this.osData = newOS
-    console.log(this.osData)
+
   }
 
   title = 'Tools and Tips';

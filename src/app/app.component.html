@@ -1,12 +1,15 @@
 <main class="main">
   <div class="content">
     <title>Blue screen of death Lookup</title>
-    <h2>Tools and tips</h2>
-    <div class="tipButtonGroup">
-      <button class="tipButton">Windows</button> <button class="tipButton">Mac</button> <button
-        class="tipButton">Linux</button>
-    </div>
+
+    <!--(change)="onOptionSelected($event)"-->
+    <select class="osSelectionDropdown">
+      <option>Windows</option>
+      <option>macOS</option>
+      <option>Linux</option>
+    </select>
     <search-result />
+    <h2>Tools and tips</h2>
     <toolsntips-page />
   </div>
 </main>

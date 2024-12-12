@@ -14,9 +14,10 @@
     display: flex;
     position: relative;
     text-align: center;
-    height: 100%;
+    height: fit-content;
     flex-direction: column;
     font-family: 'Accuratist';
+    background-color: #0A3981;
 }
 
 title {
@@ -59,6 +60,14 @@ h2 {
     width: 100%;
     flex-direction: row;
     text-align: center;
+}
+
+.osSelectionDropdown {
+    display: flex;
+    position: absolute;
+    width: 5rem;
+    margin-left: 10%;
+    top: 18%;
 }
 
 
