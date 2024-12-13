@@ -26,6 +26,7 @@ p {
     position: relative;
     flex-direction: column;
     text-align: center;
+    width: 100%;
 
     /*top right bottom left*/
     margin: 0rem auto 1rem auto;
@@ -51,8 +52,9 @@ p {
     position: relative;
     color: #D4EBF8;
     text-align: center;
+    width: 100%;
     /*top right bottom left*/
-    margin: 0rem auto 1rem auto;
+    margin: 0rem auto 0rem auto;
     background-color: #0A3981;
 }
 
@@ -63,8 +65,9 @@ td {
     border-left: solid;
     border-width: 1px;
     border-color: #E38E49;
-    height: 100%;
-    padding: 1rem auto 1rem auto;
+    word-wrap: normal;
+    height: fit-content;
+    width: auto;
 }
 
 .keyBody {
@@ -75,4 +78,6 @@ td {
     width: 100%;
     /*top right bottom left*/
     margin: 0rem auto 1rem auto;
+    background-color: #0A3981;
+    overflow: scroll;
 }
