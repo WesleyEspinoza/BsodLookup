@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ViewChild } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { CommonModule } from '@angular/common'
 import { SearchResult } from '../components/searchresult/searchresult.component';
@@ -12,6 +12,19 @@ import { ToolsAndTipsPage } from '../components/toolsandtipspage/toolsAndTips.co
 })
 
 export class AppComponent {
+  @ViewChild('toolsntips-page') toolsAndTipsComp!: ToolsAndTipsPage;
+  selectedOS = "Windows"
+
+  options = [
+    { value: 'Windows', label: 'Windows' },
+    { value: 'macOS', label: 'MacOS' },
+    { value: 'Linux', label: 'Linux' }
+  ];
+
+  onOptionSelected(event: Event) {
+    const selectedValue = (event.target as HTMLSelectElement).value;
+    this.selectedOS = selectedValue
+  }
 
   ngOnInit() {
   }

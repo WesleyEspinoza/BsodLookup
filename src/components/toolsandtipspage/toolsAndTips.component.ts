@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, SimpleChanges } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { CommonModule } from '@angular/common';
 import osjsonData from "../../data/OS_DATA.json";
@@ -109,6 +109,11 @@ export class ToolsAndTipsPage {
     }
     this.osData = newOS
 
+  }
+
+  ngOnChanges(changes: SimpleChanges) {
+    this.selectedOS = `${changes["selectedOS"]["currentValue"]}`;
+    this.ngOnInit();
   }
 
   title = 'Tools and Tips';

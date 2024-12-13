@@ -2,15 +2,13 @@
   <div class="content">
     <title>Blue screen of death Lookup</title>
 
-    <!--(change)="onOptionSelected($event)"-->
-    <select class="osSelectionDropdown">
-      <option>Windows</option>
-      <option>macOS</option>
-      <option>Linux</option>
+    <!--"-->
+    <select class="osSelectionDropdown" (change)="onOptionSelected($event)">
+      <option *ngFor="let option of options" [value]="option.value">{{option.label}}</option>
     </select>
     <search-result />
     <h2>Tools and tips</h2>
-    <toolsntips-page />
+    <toolsntips-page [selectedOS]=selectedOS />
   </div>
 </main>
 
