@@ -59,6 +59,7 @@ p {
 }
 
 td {
+    position: relative;
     border-top: solid;
     border-bottom: solid;
     border-right: solid;
@@ -82,13 +83,13 @@ thead {
     position: relative;
     color: #D4EBF8;
     text-align: center;
-    margin: 0rem auto 1rem auto;
+    max-width: 100%;
     background-color: #0A3981;
     -ms-overflow-style: none;
     scrollbar-width: none;
-    width: 100%;
     overflow: scroll;
-
+    align-items: center;
+    margin: 0rem auto 0rem auto;
 }
 
 .keyBody::-webkit-scrollbar {
