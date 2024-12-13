@@ -86,6 +86,7 @@ thead {
     background-color: #0A3981;
     -ms-overflow-style: none;
     scrollbar-width: none;
+    width: 100%;
     overflow: scroll;
 
 }

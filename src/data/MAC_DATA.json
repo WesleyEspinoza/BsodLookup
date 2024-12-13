@@ -1,37 +1,13 @@
 {
-    "2010-2012": {
-        "Command + R": "Boot into macOS Recovery mode.",
-        "Option (⌥)": "Select startup disk.",
-        "Shift + Option + Command + R": "Boot into Internet Recovery (install macOS that came with the Mac).",
-        "Option + Command + P + R": "Reset NVRAM/PRAM."
-    },
-    "2013-2015": {
-        "Command + R": "Boot into macOS Recovery mode.",
-        "Option (⌥)": "Select startup disk.",
-        "Shift + Option + Command + R": "Boot into Internet Recovery (install latest macOS compatible with the Mac).",
-        "Option + Command + P + R": "Reset NVRAM/PRAM."
-    },
-    "2016-2017": {
+    "2010-2020": {
         "Command + R": "Boot into macOS Recovery mode.",
         "Option (⌥)": "Select startup disk.",
         "Shift + Option + Command + R": "Boot into Internet Recovery (install macOS that came with the Mac or latest available).",
         "Option + Command + P + R": "Reset NVRAM/PRAM.",
-        "T": "Start in Target Disk Mode."
-    },
-    "2018-2020": {
-        "Command + R": "Boot into macOS Recovery mode.",
-        "Option (⌥)": "Select startup disk.",
-        "Shift + Option + Command + R": "Boot into Internet Recovery (install macOS that came with the Mac or latest available).",
-        "Option + Command + P + R": "Reset NVRAM/PRAM.",
-        "T": "Start in Target Disk Mode.",
-        "D": "Run Apple Diagnostics."
+        "T (2016+)": "Start in Target Disk Mode.",
+        "D (2018+)": "Run Apple Diagnostics."
     },
     "2021+": {
-        "Power Button (Hold) : Command + R(Intel)": "Access recovery options (Apple Silicon).",
-        "Option (⌥)": "Select startup disk.",
-        "Shift + Option + Command + R": "Boot into Internet Recovery (Intel Macs).",
-        "Option + Command + P + R": "Reset NVRAM/PRAM (Intel Macs).",
-        "T": "Start in Target Disk Mode (Intel Macs).",
-        "D": "Run Apple Diagnostics."
+        "Power Button (Hold) : Command + R(Intel)": "Access recovery options (Apple Silicon)."
     }
 }
