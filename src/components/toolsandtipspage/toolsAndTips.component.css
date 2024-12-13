@@ -52,7 +52,7 @@ p {
     position: relative;
     color: #D4EBF8;
     text-align: center;
-    width: 100%;
+
     /*top right bottom left*/
     margin: 0rem auto 0rem auto;
     background-color: #0A3981;
@@ -67,7 +67,14 @@ td {
     border-color: #E38E49;
     word-wrap: normal;
     height: fit-content;
-    width: auto;
+    text-align: center;
+
+}
+
+thead {
+    position: relative;
+    text-align: center;
+    margin: 2rem auto 0rem auto;
 }
 
 .keyBody {
@@ -75,9 +82,14 @@ td {
     position: relative;
     color: #D4EBF8;
     text-align: center;
-    width: 100%;
-    /*top right bottom left*/
     margin: 0rem auto 1rem auto;
     background-color: #0A3981;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
     overflow: scroll;
+
+}
+
+.keyBody::-webkit-scrollbar {
+    display: none;
 }

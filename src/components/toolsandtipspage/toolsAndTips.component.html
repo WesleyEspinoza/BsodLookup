@@ -7,6 +7,10 @@
                 </tr>
             </thead>
             <tbody class="commandBody">
+                <tr>
+                    <th>Name</th>
+                    <th>Command</th>
+                </tr>
                 <tr *ngFor=" let item of osData.commands">
                     <td>{{ item.name }}</td>
                     <td>{{ item.command }}</td>
@@ -20,9 +24,27 @@
             </thead>
 
             <tbody class="keyBody">
+                @if (selectedOS === "Windows" || selectedOS === "Linux" ) {
+                <tr>
+                    <th>brand</th>
+                    <th>Bios</th>
+                    <th>Boot</th>
+                </tr>
+                } @else {
+                <tr>
+                    <th>Model</th>
+                    <th>Recovery</th>
+                    <th>Startup Disk</th>
+                    <th>Internet recovery</th>
+                    <th>Reset NVRAM/PRAM</th>
+                    <th>Target Disk Mode</th>
+                    <th>Diagnostics</th>
+                </tr>
+                }
+
                 <tr *ngFor=" let item of osData.startUpKeys">
                     <td>{{ item.brand }}</td>
-                    <td *ngFor=" let key of item.keys">{{key.description}}: {{key.key}}</td>
+                    <td *ngFor=" let key of item.keys">{{key.key}}</td>
                 </tr>
             </tbody>
         </table>

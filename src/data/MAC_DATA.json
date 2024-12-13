@@ -27,8 +27,7 @@
         "D": "Run Apple Diagnostics."
     },
     "2021+": {
-        "Power Button (Hold)": "Access recovery options (Apple Silicon).",
-        "Command + R": "Boot into macOS Recovery mode (Intel).",
+        "Power Button (Hold) : Command + R(Intel)": "Access recovery options (Apple Silicon).",
         "Option (⌥)": "Select startup disk.",
         "Shift + Option + Command + R": "Boot into Internet Recovery (Intel Macs).",
         "Option + Command + P + R": "Reset NVRAM/PRAM (Intel Macs).",
