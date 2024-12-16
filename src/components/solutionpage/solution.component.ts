@@ -11,7 +11,8 @@ import { bsodType } from "../searchresult/searchresult.component"
 })
 
 export class SolutionPage {
-  @Input() bsodInfo: bsodType = {stopCode: "", hexcode: "", definition: "", solution: ""}
+  @Input() bsodInfo: bsodType = { stopCode: "", hexcode: "", definition: "", solution: "" }
+  @Input() shouldDisplaySolution = false
 
   ngOnInit() {
 

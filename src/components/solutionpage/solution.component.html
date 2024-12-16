@@ -1,6 +1,9 @@
 <main class="main">
     <div class="content">
         <h2>{{bsodInfo.stopCode}}</h2>
+        <p>{{bsodInfo.hexcode}}</p>
+        <p>{{bsodInfo.definition}}</p>
+        <h3 class="solutionHeader" *ngIf="shouldDisplaySolution">Potential solutions</h3>
         <p>{{bsodInfo.solution}}</p>
     </div>
 </main>
