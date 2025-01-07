@@ -1,0 +1,11 @@
+<main class="main">
+    <div [@slide]="visible()">
+        <div *ngIf="pageToDisplay == 'bsod'">
+            <search-result />
+        </div>
+        <div *ngIf="pageToDisplay == 'commands'">
+            <toolsntips-page [selectedOS]=selectedOS />
+        </div>
+
+    </div>
+</main>

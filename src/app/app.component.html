@@ -1,16 +1,18 @@
 <main class="main">
   <div class="content">
-    <title>Blue screen of death Lookup</title>
-
-    <!--"-->
-    <select class="osSelectionDropdown" (change)="onOptionSelected($event)">
-      <option *ngFor="let option of options" [value]="option.value">{{option.label}}</option>
-    </select>
-    <search-result />
-    <h2>Tools and tips</h2>
-    <toolsntips-page [selectedOS]=selectedOS />
+    <mat-toolbar class="main-tool-bar" color="primary">
+      <span class="nav-logo">GS</span>
+      <button class="nav-button" mat-button (click)="toggleSwichAnimforPage('bsod')">BSOD</button>
+      <button class="nav-button" mat-button (click)="toggleSwichAnimforPage('commands')">COMMANDS</button>
+      <button class="nav-button" mat-button (click)="toggleSwichAnimforPage('tuts')">TUTORIALS</button>
+      <button class="nav-button" mat-button (click)="toggleSwichAnimforPage('news')">NEWS</button>
+      <select class="osSelectionDropdown" (change)="onOptionSelected($event)">
+        <option *ngFor="let option of options" [value]="option.value">{{option.label}}</option>
+      </select>
+    </mat-toolbar>
+    <title>Geek Sheets</title>
+    <h2>{{section.toLocaleUpperCase()}}</h2>
   </div>
+  <slide-component [selectedOS]=selectedOS></slide-component>
 </main>
-
-
 <router-outlet />

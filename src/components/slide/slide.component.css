@@ -1,0 +1,97 @@
+.main {
+    position: relative;
+    text-align: center;
+    font-family: 'Accuratist';
+    text-align: center;
+}
+
+.content {
+    display: flex;
+    position: relative;
+    text-align: center;
+}
+
+h2 {
+    color: #D4EBF8;
+    width: 100%;
+    text-align: center;
+}
+
+p {
+    color: #D4EBF8;
+}
+
+.toolsTable {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+
+    /*top right bottom left*/
+    margin: 0rem auto 1rem auto;
+
+    border-top: double;
+    border-bottom: double;
+    border-right: double;
+    border-left: double;
+
+    border-color: #D4EBF8;
+
+}
+
+.osTitle {
+    display: flex;
+    position: relative;
+    color: #D4EBF8;
+    text-align: center;
+}
+
+.commandBody {
+    display: block;
+    position: relative;
+    color: #D4EBF8;
+    text-align: center;
+
+    /*top right bottom left*/
+    margin: 0rem auto 0rem auto;
+    background-color: #0A3981;
+}
+
+td {
+    position: relative;
+    border-top: solid;
+    border-bottom: solid;
+    border-right: solid;
+    border-left: solid;
+    border-width: 1px;
+    border-color: #E38E49;
+    word-wrap: normal;
+    height: fit-content;
+    text-align: center;
+
+}
+
+thead {
+    position: relative;
+    text-align: center;
+    margin: 2rem auto 0rem auto;
+}
+
+.keyBody {
+    display: block;
+    position: relative;
+    color: #D4EBF8;
+    text-align: center;
+    max-width: 100%;
+    background-color: #0A3981;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    overflow: scroll;
+    align-items: center;
+    margin: 0rem auto 0rem auto;
+}
+
+.keyBody::-webkit-scrollbar {
+    display: none;
+}
