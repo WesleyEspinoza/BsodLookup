@@ -10,7 +10,7 @@ import { Observable } from 'rxjs';
 import { map, startWith } from 'rxjs/operators';
 import { SolutionPage } from "../solutionpage/solution.component"
 
-import bsodjsonData from "../../data/BSOD_DATA.json"
+import bsodjsonData from "../../assets/BSOD_DATA.json"
 
 
 export interface bsodType {

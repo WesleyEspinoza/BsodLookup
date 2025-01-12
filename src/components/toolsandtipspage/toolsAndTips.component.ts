@@ -1,9 +1,9 @@
 import { Component, Input, SimpleChanges } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { CommonModule } from '@angular/common';
-import osjsonData from "../../data/OS_DATA.json";
-import motherboardjsonData from "../../data/MOTHERBOARD_DATA.json";
-import macjsonData from "../../data/MAC_DATA.json";
+import osjsonData from "../../assets/OS_DATA.json";
+import motherboardjsonData from "../../assets/MOTHERBOARD_DATA.json";
+import macjsonData from "../../assets/MAC_DATA.json";
 
 
 interface OSData {

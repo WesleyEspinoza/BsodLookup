@@ -3,7 +3,7 @@ import { CommonModule } from '@angular/common'
 import { trigger, state, style, transition, animate } from '@angular/animations';
 import { SearchResult } from "../searchresult/searchresult.component";
 import { ToolsAndTipsPage } from "../toolsandtipspage/toolsAndTips.component";
- import { ArticleGrid } from "../markdowngrid/article-grid.component";
+import { ArticleGrid } from "../markdowngrid/article-grid.component";
 
 
 @Component({
@@ -24,7 +24,7 @@ import { ToolsAndTipsPage } from "../toolsandtipspage/toolsAndTips.component";
 
 export class SlideComponent {
     protected visible = signal(true);
-    pageToDisplay = "articles"
+    pageToDisplay = "news"
 
     show_new_section(page: string) {
         this.visible.set(false)
@@ -33,5 +33,4 @@ export class SlideComponent {
             this.visible.set(true)
         }, 500);
     }
-
 }

@@ -1,8 +1,7 @@
 import { Component, signal, Input } from "@angular/core";
 import { CommonModule } from '@angular/common'
 import { trigger, state, style, transition, animate } from '@angular/animations';
-import { MarkdownService } from 'ngx-markdown';
-import { HttpClient } from '@angular/common/http';
+import { MarkdownComponent } from 'ngx-markdown';
 
 
 @Component({
@@ -17,21 +16,18 @@ import { HttpClient } from '@angular/common/http';
             transition('false => true', animate('0.25s ease-in-out')),
             transition('true => false', animate('0.25s ease-in-out', style({ translate: '200%' })))
         ])],
-    imports: [CommonModule]
+    imports: [CommonModule, MarkdownComponent]
 })
 
 
 export class ArticleContent {
     protected visible = signal(true);
-    @Input() selectedArticle: string = "bypass-online-setup"
+    @Input() selectedArticle = "bypass_online_setup"
 
-    
-
-    markdownContent = "src/data/ArticleMarkdownFiles/bypass-online-setup.md"
+    markdownContent: any = '../../../data/ArticleMarkdownFiles/' + this.selectedArticle + ".md"
 
     ngOnInit() {
 
-
-        this.markdownContent = "src/data/ArticleMarkdownFiles/" + this.selectedArticle + ".md"
+        console.log(this.markdownContent)
     }
 }
