@@ -1,16 +1,14 @@
 import { Component, signal, Input } from "@angular/core";
 import { CommonModule } from '@angular/common'
 import { trigger, state, style, transition, animate } from '@angular/animations';
-import { SearchResult } from "../searchresult/searchresult.component";
-import { ToolsAndTipsPage } from "../toolsandtipspage/toolsAndTips.component";
- import { ArticleGrid } from "../markdowngrid/article-grid.component";
+import {ArticleContent} from "./content/article-content.component"
 
 
 @Component({
-    selector: 'slide-component',
+    selector: 'article-grid-component',
     standalone: true,
-    templateUrl: './slide.component.html',
-    styleUrl: './slide.component.css',
+    templateUrl: './article-grid.component.html',
+    styleUrl: './article-grid.component.css',
     animations: [
         trigger('slide', [
             state('false', style({ translate: '-200%' })),
@@ -18,13 +16,14 @@ import { ToolsAndTipsPage } from "../toolsandtipspage/toolsAndTips.component";
             transition('false => true', animate('0.25s ease-in-out')),
             transition('true => false', animate('0.25s ease-in-out', style({ translate: '200%' })))
         ])],
-    imports: [SearchResult, ToolsAndTipsPage, CommonModule, ArticleGrid]
+    imports: [CommonModule, ArticleContent]
 })
 
 
-export class SlideComponent {
+export class ArticleGrid {
     protected visible = signal(true);
-    pageToDisplay = "articles"
+    @Input() selectedArticle: number = 0
+    pageToDisplay = "article"
 
     show_new_section(page: string) {
         this.visible.set(false)

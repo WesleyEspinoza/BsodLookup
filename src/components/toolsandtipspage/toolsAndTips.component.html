@@ -1,5 +1,8 @@
 <main class="main">
     <div class="content">
+        <select class="osSelectionDropdown" (change)="onOptionSelected($event)">
+            <option *ngFor="let option of options" [value]="option.value">{{option.label}}</option>
+          </select>
         <table class="toolsTable">
             <thead class="osTitle">
                 <tr>

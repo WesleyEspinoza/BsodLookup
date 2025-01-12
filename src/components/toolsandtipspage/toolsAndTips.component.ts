@@ -38,8 +38,20 @@ interface StartUpkey {
 
 
 export class ToolsAndTipsPage {
-  @Input() selectedOS: string = "Windows"
+  selectedOS: string = "Windows"
   osData: OSData = { osName: "", startUpKeys: [], commands: [] }
+
+  options = [
+    { value: 'Windows', label: 'Windows' },
+    { value: 'macOS', label: 'MacOS' },
+    { value: 'Linux', label: 'Linux' }
+  ];
+
+  onOptionSelected(event: Event) {
+    const selectedValue = (event.target as HTMLSelectElement).value;
+    this.selectedOS = selectedValue
+  }
+
 
   populateStartUpKeys(destination: OSData) {
     switch (destination.osName) {

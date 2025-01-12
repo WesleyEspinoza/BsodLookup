@@ -4,15 +4,12 @@
       <span class="nav-logo">GS</span>
       <button class="nav-button" mat-button (click)="toggleSwichAnimforPage('bsod')">BSOD</button>
       <button class="nav-button" mat-button (click)="toggleSwichAnimforPage('commands')">COMMANDS</button>
-      <button class="nav-button" mat-button (click)="toggleSwichAnimforPage('tuts')">TUTORIALS</button>
+      <button class="nav-button" mat-button (click)="toggleSwichAnimforPage('articles')">ARTICLES</button>
       <button class="nav-button" mat-button (click)="toggleSwichAnimforPage('news')">NEWS</button>
-      <select class="osSelectionDropdown" (change)="onOptionSelected($event)">
-        <option *ngFor="let option of options" [value]="option.value">{{option.label}}</option>
-      </select>
     </mat-toolbar>
     <title>Geek Sheets</title>
     <h2>{{section.toLocaleUpperCase()}}</h2>
   </div>
-  <slide-component [selectedOS]=selectedOS></slide-component>
+  <slide-component></slide-component>
 </main>
 <router-outlet />

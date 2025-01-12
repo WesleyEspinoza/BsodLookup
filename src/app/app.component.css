@@ -63,13 +63,6 @@ h2 {
     text-align: center;
 }
 
-.osSelectionDropdown {
-    display: flex;
-    position: relative;
-    width: fit-content;
-    margin-left: 5px;
-}
-
 .nav-button {
     display: flex;
     position: relative;

@@ -4,7 +4,10 @@
             <search-result />
         </div>
         <div *ngIf="pageToDisplay == 'commands'">
-            <toolsntips-page [selectedOS]=selectedOS />
+            <toolsntips-page />
+        </div>
+        <div *ngIf="pageToDisplay == 'articles'">
+            <article-grid-component />
         </div>
 
     </div>

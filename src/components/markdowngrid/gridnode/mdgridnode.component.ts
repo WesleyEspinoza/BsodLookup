@@ -1,16 +1,13 @@
 import { Component, signal, Input } from "@angular/core";
 import { CommonModule } from '@angular/common'
 import { trigger, state, style, transition, animate } from '@angular/animations';
-import { SearchResult } from "../searchresult/searchresult.component";
-import { ToolsAndTipsPage } from "../toolsandtipspage/toolsAndTips.component";
- import { ArticleGrid } from "../markdowngrid/article-grid.component";
 
 
 @Component({
-    selector: 'slide-component',
+    selector: 'gridnode-component',
     standalone: true,
-    templateUrl: './slide.component.html',
-    styleUrl: './slide.component.css',
+    templateUrl: './mdgridnode.component.html',
+    styleUrl: './mdgridnode.component.css',
     animations: [
         trigger('slide', [
             state('false', style({ translate: '-200%' })),
@@ -18,13 +15,14 @@ import { ToolsAndTipsPage } from "../toolsandtipspage/toolsAndTips.component";
             transition('false => true', animate('0.25s ease-in-out')),
             transition('true => false', animate('0.25s ease-in-out', style({ translate: '200%' })))
         ])],
-    imports: [SearchResult, ToolsAndTipsPage, CommonModule, ArticleGrid]
+    imports: [CommonModule]
 })
 
 
-export class SlideComponent {
+export class GridNode {
     protected visible = signal(true);
-    pageToDisplay = "articles"
+    @Input() selectedOS: string = "Windows"
+    pageToDisplay = "bsod"
 
     show_new_section(page: string) {
         this.visible.set(false)

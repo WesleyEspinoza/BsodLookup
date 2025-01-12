@@ -8,12 +8,11 @@
 .content {
     display: flex;
     position: relative;
-    flex-direction: column;
     text-align: center;
 }
 
 h2 {
-    color: #090d0f;
+    color: #D4EBF8;
     width: 100%;
     text-align: center;
 }
@@ -95,14 +94,4 @@ thead {
 
 .keyBody::-webkit-scrollbar {
     display: none;
-}
-
-.osSelectionDropdown {
-    display: flex;
-    position: relative;
-    width: fit-content;
-    text-align: center;
-    /*top right bottom left*/
-    margin: 0 auto 15px auto;
-
 }

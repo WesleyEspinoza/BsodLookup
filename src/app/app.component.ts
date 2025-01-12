@@ -8,7 +8,7 @@ import { SlideComponent } from '../components/slide/slide.component';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, CommonModule, MatToolbarModule, MatButtonModule, SlideComponent,],
+  imports: [RouterOutlet, CommonModule, MatToolbarModule, MatButtonModule, SlideComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
