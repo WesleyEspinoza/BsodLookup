@@ -1,0 +1,8 @@
+<div class="container">
+    <ul>
+        <li class="article-card" [style.background-image]="'url('+article.urlToImage" *ngFor="let article of newsArticles; article">
+           <div class="article-title">{{article.title}}</div>
+           <div class="article-description">{{article.description}}</div>
+        </li>
+     </ul>
+</div>

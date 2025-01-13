@@ -17,7 +17,7 @@ export class AppComponent {
   @ViewChild('toolsntips-page') toolsAndTipsComp!: ToolsAndTipsPage;
   @ViewChild(SlideComponent, { static: true }) slide!: SlideComponent;
   selectedOS = "Windows"
-  section = "bsod"
+  section = "news"
 
   options = [
     { value: 'Windows', label: 'Windows' },

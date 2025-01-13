@@ -82,6 +82,7 @@ h2 {
     /* IE and Edge */
     scrollbar-width: none;
     /* Firefox */
+    z-index: 999;
 }
 
 /* Hide scrollbar for Chrome, Safari and Opera */
