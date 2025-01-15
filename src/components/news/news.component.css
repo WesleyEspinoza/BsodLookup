@@ -4,18 +4,34 @@
 }
 
 .article-title {
-    display: absolute;
+    display: flex;
     position: relative;
     font-weight: bolder;
-    background-color: rgba(0, 0, 0, 0.533);
+    background-color: rgba(0, 0, 0, 0.616);
     font-size: x-large;
+    margin: 0 auto 0 auto;
 }
 
 .article-description {
-    display: absolute;
+    display: flex;
     position: relative;
     background-color: rgba(0, 0, 0, 0.533);
     font-size: larger;
+    margin: 0 auto 0 auto;
+}
+
+.article-preview {
+    display: flex;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.533);
+    font-size: larger;
+    width: 100%;
+    text-align: left;
+    bottom: -16px;
+    te overflow: hidden;
+    word-wrap: break-word;
+    white-space: normal;
+    height: fit-content;
 }
 
 
@@ -25,11 +41,12 @@
     position: relative;
     color: white;
     margin-bottom: 4rem;
-    width: 75%;
+    width: 95%;
     height: 400px;
     background-size: cover;
     margin-left: auto;
     margin-right: auto;
     border-radius: 4px;
     background-color: black;
+    overflow: hidden;
 }
